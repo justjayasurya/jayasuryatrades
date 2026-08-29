@@ -1,1 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+XAUUSD Gold Market Analysis — August 29, 2026 | Jayasurya Trades
+</title>
+
+<meta name="description"
+content="XAUUSD Gold Market Analysis for August 29, 2026. Analysis of the potential Double Bottom, confirmation conditions, parallel channel breakdown and important support levels.">
+
+<meta name="theme-color" content="#050505">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050505;
+    color: #f4f4f4;
+    line-height: 1.75;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: auto;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(5,5,5,0.96);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom:
+        1px solid rgba(218,169,47,0.25);
+}
+
+.nav {
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.brand img {
+    width: 43px;
+    height: 43px;
+
+    object-fit: contain;
+}
+
+.back {
+    color: #dca72f;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* ================= ARTICLE HEADER ================= */
+
+.article-header {
+    padding: 75px 0 50px;
+
+    border-bottom:
+        1px solid #202020;
+}
+
+.category {
+    display: inline-block;
+
+    color: #dca72f;
+
+    border:
+        1px solid #765b1d;
+
+    padding: 6px 11px;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.article-header h1 {
+    font-size:
+        clamp(34px, 6vw, 57px);
+
+    line-height: 1.08;
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 25px;
+}
+
+.gold {
+    color: #dca72f;
+}
+
+
+/* ================= META ================= */
+
+.article-meta {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.meta-box {
+    background: #0d0d0d;
+
+    border:
+        1px solid #292929;
+
+    border-radius: 5px;
+
+    padding: 10px 15px;
+
+    font-size: 11px;
+
+    color: #999;
+}
+
+.meta-box strong {
+    color: #dca72f;
+
+    margin-left: 4px;
+}
+
+
+/* ================= ARTICLE ================= */
+
+.article {
+    padding: 60px 0 90px;
+}
+
+.article p {
+    color: #b0b0b0;
+
+    font-size: 16px;
+
+    margin-bottom: 23px;
+}
+
+.article h2 {
+    font-size: 29px;
+
+    line-height: 1.2;
+
+    margin: 55px 0 17px;
+}
+
+.article h3 {
+    font-size: 20px;
+
+    color: #e0ae36;
+
+    margin: 35px 0 10px;
+}
+
+.article strong {
+    color: #dddddd;
+}
+
+
+/* ================= HIGHLIGHT ================= */
+
+.highlight {
+    border-left:
+        3px solid #dca72f;
+
+    background: #0c0c0c;
+
+    padding: 23px 25px;
+
+    margin: 35px 0;
+
+    color: #c8c8c8;
+
+    font-size: 16px;
+}
+
+
+/* ================= CHART ================= */
+
+.chart {
+    margin: 38px 0 45px;
+
+    background: #090909;
+
+    border:
+        1px solid #292929;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.chart img {
+    width: 100%;
+    height: auto;
+}
+
+.chart-caption {
+    padding: 13px 17px;
+
+    color: #777;
+
+    font-size: 11px;
+
+    border-top:
+        1px solid #202020;
+}
+
+
+/* ================= LEVELS ================= */
+
+.level-box {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin: 30px 0 40px;
+}
+
+.level {
+    background: #0d0d0d;
+
+    border:
+        1px solid #292929;
+
+    border-radius: 7px;
+
+    padding: 23px;
+}
+
+.level-label {
+    color: #777;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    font-size: 9px;
+
+    margin-bottom: 7px;
+}
+
+.level-price {
+    color: #dfad35;
+
+    font-size: 25px;
+
+    font-weight: 800;
+}
+
+
+/* ================= TAKEAWAYS ================= */
+
+.takeaways {
+    background: #0c0c0c;
+
+    border:
+        1px solid #292929;
+
+    border-radius: 8px;
+
+    padding: 30px;
+
+    margin-top: 45px;
+}
+
+.takeaways h2 {
+    margin-top: 0;
+}
+
+.takeaways ul {
+    padding-left: 20px;
+
+    color: #aaa;
+}
+
+.takeaways li {
+    margin-bottom: 10px;
+}
+
+
+/* ================= PRINCIPLE ================= */
+
+.principle {
+    text-align: center;
+
+    padding: 45px 25px;
+
+    margin: 50px 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(218,169,47,0.09),
+            transparent 65%
+        );
+
+    border-top:
+        1px solid #252525;
+
+    border-bottom:
+        1px solid #252525;
+}
+
+.principle p {
+    color: #dfad35;
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+
+/* ================= DISCLAIMER ================= */
+
+.disclaimer {
+    margin-top: 60px;
+
+    padding: 23px;
+
+    border:
+        1px solid #252525;
+
+    border-radius: 6px;
+
+    background: #080808;
+}
+
+.disclaimer h3 {
+    margin: 0 0 8px;
+
+    color: #dca72f;
+
+    font-size: 14px;
+}
+
+.disclaimer p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    border-top:
+        1px solid #202020;
+
+    background: #030303;
+
+    padding: 35px 0;
+}
+
+.footer {
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.footer-brand {
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+
+    font-size: 12px;
+}
+
+.footer-brand span {
+    color: #dca72f;
+}
+
+.footer-copy {
+    color: #555;
+
+    font-size: 10px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 650px) {
+
+    .article-header {
+        padding: 55px 0 40px;
+    }
+
+    .article {
+        padding: 45px 0 70px;
+    }
+
+    .article p {
+        font-size: 15px;
+    }
+
+    .level-box {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="container nav">
+
+<a href="../index.html" class="brand">
+
+<img
+src="../brand-banner.png"
+alt="Jayasurya Trades"
+>
+
+<span>
+JAYASURYA TRADES
+</span>
+
+</a>
+
+
+<a href="../index.html" class="back">
+← Back to Home
+</a>
+
+</div>
+
+</header>
+
+
+
+<!-- ================= ARTICLE TITLE ================= -->
+
+<section class="article-header">
+
+<div class="container">
+
+<div class="category">
+Market Analysis • Gold Market
+</div>
+
+
+<h1>
+
+XAUUSD Gold Market Analysis
+<br>
+
+<span>
+Double Bottom Confirmation & Channel Breakdown
+</span>
+
+</h1>
+
+
+<div class="meta-box">
+Published by <strong>Jayasurya Trades</strong>
+</div>
+
+
+<div class="article-meta">
+
+<div class="meta-box">
+Instrument:
+<strong>XAUUSD</strong>
+</div>
+
+<div class="meta-box">
+Date:
+<strong>August 29, 2026 (Saturday)</strong>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= ARTICLE ================= -->
+
+<main class="article">
+
+<div class="container">
+
+
+<p>
+
+In our previous analysis, we identified that a
+<strong>Double Bottom pattern was potentially forming</strong>
+in the Gold market.
+
+However, we clearly stated that certain conditions
+needed to be fulfilled before the pattern could be
+considered confirmed.
+
+According to our trading principles,
+<strong>the Double Bottom was not confirmed.</strong>
+
+</p>
+
+
+
+<!-- ================= CHART 1 ================= -->
+
+<div class="chart">
+
+<img
+src="../Chart1.jpg"
+alt="XAUUSD Gold Market Analysis Chart 1 — Double Bottom confirmation"
+>
+
+<div class="chart-caption">
+
+Chart 1 — Double Bottom confirmation level
+
+</div>
+
+</div>
+
+
+
+<h2>
+Double Bottom — Why It Wasn't Confirmed
+</h2>
+
+
+<p>
+
+One of the important confirmation conditions was that,
+after forming the Double Bottom, price needed to
+<strong>break above the dashed resistance line</strong>
+marked on Chart 1.
+
+That breakout did not occur.
+
+Therefore, based on our predefined principles,
+we did not consider the Double Bottom to be a
+confirmed bullish pattern.
+
+</p>
+
+
+<div class="highlight">
+
+<strong>
+A potential pattern is not the same as a confirmed pattern.
+</strong>
+
+<br><br>
+
+We wait for the predefined confirmation conditions
+before considering the setup valid.
+
+</div>
+
+
+
+<!-- ================= CHART 2 ================= -->
+
+<div class="chart">
+
+<img
+src="../Chart2.jpg"
+alt="XAUUSD Gold Market Analysis Chart 2 — Parallel channel breakdown"
+>
+
+<div class="chart-caption">
+
+Chart 2 — Parallel channel and breakout scenario
+
+</div>
+
+</div>
+
+
+
+<h2>
+The Parallel Channel Breakdown
+</h2>
+
+
+<p>
+
+In our previous analysis, we also discussed a
+<strong>parallel channel</strong> in which price had
+been moving.
+
+The principle was that a decisive breakout from the
+channel could potentially lead to a significant move
+in the direction of the breakout.
+
+Whether the breakout occurred to the upside or downside,
+the direction of the break was important.
+
+</p>
+
+
+<p>
+
+As shown in the current chart, price eventually
+<strong>broke downward from the parallel channel</strong>,
+followed by a strong bearish move.
+
+This was consistent with the scenario discussed
+in our previous analysis.
+
+</p>
+
+
+<p>
+
+The channel breakdown could therefore provide a
+potential opportunity for a sell-side setup,
+subject to confirmation and proper risk management.
+
+</p>
+
+
+
+<!-- ================= CHART 3 ================= -->
+
+<div class="chart">
+
+<img
+src="../Chart3.jpg"
+alt="XAUUSD Gold Market Analysis Chart 3 — Support and downtrend confirmation"
+>
+
+<div class="chart-caption">
+
+Chart 3 — Channel structure, support levels and
+downtrend confirmation zone
+
+</div>
+
+</div>
+
+
+
+<h2>
+Price Behaviour Inside the Channel
+</h2>
+
+
+<p>
+
+In Chart 3, we highlighted how long price had been
+moving within the parallel channel.
+
+Understanding this price behaviour was important
+because the eventual breakout gave us additional
+information about the direction of the move.
+
+</p>
+
+
+<p>
+
+After the breakdown, we also identified potential
+support areas where selling pressure could potentially
+slow down or where price could react.
+
+</p>
+
+
+
+<h2>
+Important Support Levels
+</h2>
+
+
+<div class="level-box">
+
+
+<div class="level">
+
+<div class="level-label">
+Immediate Support
+</div>
+
+<div class="level-price">
+4454.990
+</div>
+
+</div>
+
+
+<div class="level">
+
+<div class="level-label">
+Major Support
+</div>
+
+<div class="level-price">
+4342.444
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<h3>
+Immediate Support — 4454.990
+</h3>
+
+
+<p>
+
+<strong>4454.990</strong> is the next immediate support
+level identified in our analysis.
+
+Price behaviour around this level needs to be
+observed carefully because it could act as a temporary
+barrier to further downside movement.
+
+</p>
+
+
+
+<h3>
+Major Support — 4342.444
+</h3>
+
+
+<p>
+
+<strong>4342.444</strong> is a major support level
+marked on the chart.
+
+A strong break below this level, particularly with
+confirmation on higher timeframes, could potentially
+strengthen the case for a broader bearish or downtrend
+scenario.
+
+</p>
+
+
+
+<h2>
+Is the Downtrend Confirmed?
+</h2>
+
+
+<p>
+
+This is where it is important to distinguish between
+<strong>bearish movement</strong> and a
+<strong>confirmed downtrend</strong>.
+
+Although price has broken downward from the channel
+and produced a strong bearish move, our predefined
+confirmation principles still matter.
+
+</p>
+
+
+<p>
+
+We do not change our interpretation simply because
+price has moved strongly.
+
+<strong>We wait for the conditions we established beforehand.</strong>
+
+</p>
+
+
+
+<!-- ================= KEY TAKEAWAYS ================= -->
+
+<div class="takeaways">
+
+<h2>
+Key Takeaways
+</h2>
+
+<ul>
+
+<li>
+The Double Bottom was identified as a potential pattern,
+but it was not confirmed.
+</li>
+
+<li>
+Price failed to break above the required confirmation
+level marked on Chart 1.
+</li>
+
+<li>
+Price subsequently broke downward from the parallel
+channel.
+</li>
+
+<li>
+The channel breakdown was followed by a strong bearish move.
+</li>
+
+<li>
+<strong>4454.990</strong> is an important immediate support level.
+</li>
+
+<li>
+<strong>4342.444</strong> is a major support level to monitor.
+</li>
+
+<li>
+A strong break below <strong>4342.444</strong> on higher
+timeframes could potentially support broader bearish
+or downtrend confirmation.
+</li>
+
+<li>
+Until the required conditions are met, we avoid
+prematurely calling a confirmed downtrend.
+</li>
+
+</ul>
+
+</div>
+
+
+
+<!-- ================= PRINCIPLE ================= -->
+
+<div class="principle">
+
+<p>
+
+We don't trade the pattern simply because we can see it.
+
+<br><br>
+
+We wait for the conditions that confirm it.
+
+</p>
+
+</div>
+
+
+
+<!-- ================= DISCLAIMER ================= -->
+
+<div class="disclaimer">
+
+<h3>
+Risk Disclaimer
+</h3>
+
+<p>
+
+This analysis is provided for educational and
+informational purposes only and should not be
+considered financial advice or a recommendation to
+buy or sell any financial instrument.
+
+Trading involves substantial risk. Always conduct
+your own research and follow your own trading plan
+and risk-management rules.
+
+</p>
+
+</div>
+
+
+</div>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container footer">
+
+<div class="footer-brand">
+
+JAYASURYA
+<span>
+TRADES
+</span>
+
+</div>
+
+
+<div class="footer-copy">
+
+© 2026 Jayasurya Trades
+
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+
+</html>
