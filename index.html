@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Jayasurya Trades | Market Analysis, Education & Trading Psychology</title>
+<title>Jayasurya Trades | Analyze. Anticipate. Execute.</title>
 
 <meta name="description"
-      content="Jayasurya Trades — Market Analysis, Price Action, Advanced Chart Patterns, Trading Psychology, Trade Journal and Trade Results.">
-
-<meta name="theme-color"
-      content="#050505">
+content="Jayasurya Trades — Market Analysis, Trading Education, Trading Psychology and Trading Journal. Analyze. Anticipate. Execute.">
 
 <style>
 
@@ -34,8 +31,8 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #050505;
-    color: #f5f5f5;
-    line-height: 1.6;
+    color: #f4f4f4;
+    line-height: 1.7;
 }
 
 a {
@@ -49,7 +46,7 @@ img {
 }
 
 .container {
-    width: min(1120px, 92%);
+    width: min(1100px, 92%);
     margin: auto;
 }
 
@@ -63,15 +60,16 @@ header {
     top: 0;
     z-index: 1000;
 
-    background: rgba(5, 5, 5, 0.95);
+    background: rgba(5,5,5,0.96);
 
     backdrop-filter: blur(12px);
 
-    border-bottom: 1px solid rgba(218, 169, 47, 0.25);
+    border-bottom:
+        1px solid rgba(218,169,47,0.25);
 }
 
 .nav {
-    min-height: 76px;
+    min-height: 72px;
 
     display: flex;
     align-items: center;
@@ -80,59 +78,47 @@ header {
     gap: 20px;
 }
 
-
-/* Brand */
-
 .brand {
     display: flex;
     align-items: center;
+    gap: 10px;
 
-    gap: 12px;
-
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 800;
 
     letter-spacing: 1.5px;
 }
 
 .brand img {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
 
     object-fit: contain;
 }
 
-
-/* Navigation */
-
 nav {
     display: flex;
     align-items: center;
-
-    gap: 23px;
+    gap: 22px;
 }
 
 nav a {
-    color: #bdbdbd;
+    color: #999;
 
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
 
     transition: 0.25s;
 }
 
 nav a:hover {
-    color: #e3ae35;
+    color: #dca72f;
 }
 
 .nav-youtube {
-    border: 1px solid #a97e20;
-
-    padding: 8px 13px;
-
-    border-radius: 4px;
-
-    color: #e3ae35 !important;
+    color: #dca72f !important;
 }
 
 
@@ -141,142 +127,87 @@ nav a:hover {
 ========================================================= */
 
 .hero {
-    min-height: 88vh;
+    min-height: 650px;
 
     display: flex;
     align-items: center;
 
-    position: relative;
-
-    overflow: hidden;
+    padding: 80px 0;
 
     background:
         radial-gradient(
-            circle at 75% 35%,
-            rgba(218, 169, 47, 0.13),
-            transparent 34%
-        ),
-        radial-gradient(
-            circle at 15% 85%,
-            rgba(218, 169, 47, 0.05),
+            circle at 75% 50%,
+            rgba(218,169,47,0.08),
             transparent 35%
-        ),
-        #050505;
-}
-
-
-/* subtle grid */
-
-.hero::before {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    opacity: 0.08;
-
-    background-image:
-        linear-gradient(
-            rgba(255,255,255,0.08) 1px,
-            transparent 1px
-        ),
-        linear-gradient(
-            90deg,
-            rgba(255,255,255,0.08) 1px,
-            transparent 1px
         );
-
-    background-size: 70px 70px;
-
-    pointer-events: none;
 }
-
 
 .hero-grid {
-
-    position: relative;
-    z-index: 2;
-
     display: grid;
 
     grid-template-columns:
-        1fr 1fr;
-
-    gap: 55px;
+        1fr 0.85fr;
 
     align-items: center;
 
-    padding: 85px 0;
+    gap: 70px;
 }
 
-
-/* Hero text */
-
 .eyebrow {
+    color: #dca72f;
 
-    color: #dfad35;
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
 
     text-transform: uppercase;
 
-    letter-spacing: 4px;
-
-    font-size: 10px;
-
-    font-weight: 700;
-
-    margin-bottom: 18px;
+    margin-bottom: 22px;
 }
 
-
 .hero h1 {
+    font-size: clamp(52px, 7vw, 88px);
 
-    font-size:
-        clamp(43px, 7vw, 78px);
+    line-height: 0.95;
 
-    line-height: 0.94;
-
-    letter-spacing: -3px;
+    letter-spacing: -4px;
 
     margin-bottom: 25px;
 }
 
-
 .gold {
-    color: #dfad35;
+    color: #dca72f;
 }
 
-
 .tagline {
+    color: #777;
 
-    color: #dfad35;
+    font-size: 11px;
 
-    font-size: 12px;
+    font-weight: 700;
 
     letter-spacing: 2px;
 
-    font-weight: 700;
-
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
-
 .hero-description {
+    color: #999;
 
-    color: #a0a0a0;
-
-    max-width: 570px;
+    max-width: 590px;
 
     font-size: 16px;
 
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 
-/* Hero buttons */
+/* =========================================================
+   FOUR HERO BUTTONS
+========================================================= */
 
 .buttons {
-
     display: flex;
 
     flex-wrap: wrap;
@@ -284,81 +215,79 @@ nav a:hover {
     gap: 12px;
 }
 
-
 .button {
+    display: inline-flex;
 
-    display: inline-block;
+    align-items: center;
+    justify-content: center;
 
-    padding: 12px 19px;
+    min-height: 45px;
+
+    padding: 0 18px;
 
     border-radius: 4px;
 
-    font-size: 12px;
+    font-size: 10px;
 
-    font-weight: 700;
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+
+    text-transform: uppercase;
 
     transition: 0.25s;
 }
 
-
 .button-gold {
-
-    background: #d6a32c;
+    background: #dca72f;
 
     color: #050505;
 }
 
-
 .button-gold:hover {
+    background: #f0c55c;
 
-    background: #e8b63b;
+    transform: translateY(-2px);
+}
+
+.button-outline {
+    border:
+        1px solid #3b3b3b;
+
+    color: #bbb;
+}
+
+.button-outline:hover {
+    border-color: #dca72f;
+
+    color: #dca72f;
 
     transform: translateY(-2px);
 }
 
 
-.button-outline {
-
-    border: 1px solid #414141;
-
-    color: #ddd;
-}
-
-
-.button-outline:hover {
-
-    border-color: #d6a32c;
-
-    color: #e2ae35;
-}
-
-
-/* Hero banner */
+/* =========================================================
+   HERO BRAND IMAGE
+========================================================= */
 
 .hero-banner {
-
     display: flex;
 
-    align-items: center;
     justify-content: center;
+
+    align-items: center;
 }
 
-
 .hero-banner img {
-
     width: 100%;
 
-    max-width: 520px;
+    max-width: 500px;
 
-    border-radius: 9px;
-
-    border:
-        1px solid
-        rgba(218, 169, 47, 0.35);
-
-    box-shadow:
-        0 25px 80px
-        rgba(0,0,0,0.65);
+    filter:
+        drop-shadow(
+            0 25px 50px
+            rgba(0,0,0,0.7)
+        );
 }
 
 
@@ -367,63 +296,48 @@ nav a:hover {
 ========================================================= */
 
 section {
-
-    padding: 85px 0;
-}
-
-
-.section-dark {
-
-    background: #090909;
+    padding: 100px 0;
 
     border-top:
-        1px solid #181818;
-
-    border-bottom:
-        1px solid #181818;
+        1px solid #151515;
 }
 
+.section-dark {
+    background: #090909;
+}
 
 .section-heading {
+    max-width: 720px;
 
-    margin-bottom: 42px;
+    margin-bottom: 45px;
 }
 
-
 .section-label {
-
     color: #dca72f;
-
-    text-transform: uppercase;
-
-    letter-spacing: 3px;
 
     font-size: 10px;
 
-    font-weight: 700;
+    font-weight: 800;
 
-    margin-bottom: 9px;
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 
-
 .section-heading h2 {
-
-    font-size:
-        clamp(31px, 5vw, 47px);
+    font-size: clamp(32px, 5vw, 50px);
 
     line-height: 1.1;
 
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
-
 .section-heading p {
+    color: #777;
 
-    color: #909090;
-
-    max-width: 650px;
-
-    font-size: 14px;
+    font-size: 15px;
 }
 
 
@@ -432,114 +346,81 @@ section {
 ========================================================= */
 
 .cards {
-
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+        repeat(2, 1fr);
 
-    gap: 18px;
+    gap: 20px;
 }
 
-
 .card {
+    position: relative;
 
-    background:
-        linear-gradient(
-            145deg,
-            #111111,
-            #080808
-        );
+    padding: 32px;
+
+    background: #0d0d0d;
 
     border:
-        1px solid #252525;
+        1px solid #242424;
 
     border-radius: 8px;
 
-    padding: 29px;
-
-    transition: 0.25s;
+    transition:
+        transform 0.25s,
+        border-color 0.25s;
 }
-
 
 .card:hover {
+    transform: translateY(-4px);
 
-    transform:
-        translateY(-5px);
-
-    border-color:
-        rgba(218,169,47,0.55);
+    border-color: #6b531e;
 }
-
 
 .icon {
+    font-size: 28px;
 
-    font-size: 26px;
-
-    margin-bottom: 17px;
+    margin-bottom: 18px;
 }
-
 
 .card h3 {
+    font-size: 22px;
 
-    font-size: 19px;
-
-    margin-bottom: 9px;
+    margin-bottom: 10px;
 }
 
-
 .card p {
+    color: #858585;
 
-    color: #919191;
-
-    font-size: 13px;
+    font-size: 14px;
 
     margin-bottom: 20px;
 }
 
-
 .card-link {
+    color: #dca72f;
 
-    color: #dfad35;
+    font-size: 10px;
 
-    font-size: 12px;
+    font-weight: 800;
 
-    font-weight: 700;
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.card-link:hover {
+    color: #f0c55c;
 }
 
 
 /* =========================================================
-   MARKET ANALYSIS
+   GOLD MARKET
 ========================================================= */
 
 .gold-market {
-
-    max-width: 500px;
-}
-
-
-/* =========================================================
-   TRADING PSYCHOLOGY
-========================================================= */
-
-.psychology-box {
-
-    max-width: 500px;
-}
-
-
-/* =========================================================
-   TRADING
-========================================================= */
-
-.trading-section {
-
-    background:
-        linear-gradient(
-            180deg,
-            #090909,
-            #050505
-        );
+    border-color:
+        rgba(218,169,47,0.25);
 }
 
 
@@ -548,15 +429,12 @@ section {
 ========================================================= */
 
 .profile-section {
-
     text-align: center;
 
     background: #050505;
 }
 
-
 .profile-photo {
-
     width: 155px;
     height: 155px;
 
@@ -574,32 +452,91 @@ section {
         rgba(0,0,0,0.6);
 }
 
-
 .profile-photo img {
-
     width: 100%;
     height: 100%;
 
     object-fit: cover;
 }
 
-
 .profile-section h2 {
-
     font-size: 35px;
 
     margin-bottom: 10px;
 }
 
-
 .profile-section p {
-
     color: #909090;
 
     max-width: 650px;
 
-    margin:
-        0 auto;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   CONNECT / SOCIAL MEDIA
+========================================================= */
+
+.connect-section {
+    background: #090909;
+
+    text-align: center;
+}
+
+.social-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    max-width: 900px;
+
+    margin: 40px auto 0;
+}
+
+.social-link {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 55px;
+
+    padding: 12px 15px;
+
+    background: #0d0d0d;
+
+    border:
+        1px solid #272727;
+
+    border-radius: 5px;
+
+    color: #aaa;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    transition: 0.25s;
+}
+
+.social-link:hover {
+    color: #dca72f;
+
+    border-color: #765b1d;
+
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    margin-right: 8px;
+
+    font-size: 16px;
 }
 
 
@@ -608,7 +545,6 @@ section {
 ========================================================= */
 
 footer {
-
     background: #030303;
 
     border-top:
@@ -617,9 +553,7 @@ footer {
     padding: 35px 0;
 }
 
-
 .footer-inner {
-
     display: flex;
 
     justify-content:
@@ -630,9 +564,7 @@ footer {
     gap: 20px;
 }
 
-
 .footer-brand {
-
     font-weight: 800;
 
     letter-spacing: 1.5px;
@@ -640,15 +572,11 @@ footer {
     font-size: 14px;
 }
 
-
 .footer-brand span {
-
     color: #dca72f;
 }
 
-
 .footer-copy {
-
     color: #5f5f5f;
 
     font-size: 10px;
@@ -665,82 +593,95 @@ footer {
         display: none;
     }
 
-    .hero-grid {
+    .hero {
+        min-height: auto;
 
+        padding: 65px 0;
+    }
+
+    .hero-grid {
         grid-template-columns: 1fr;
 
         text-align: center;
 
-        padding:
-            65px 0;
+        gap: 45px;
     }
 
     .hero-banner {
-
         order: -1;
     }
 
     .hero-banner img {
-
         max-width: 430px;
     }
 
     .hero-description {
-
         margin-left: auto;
         margin-right: auto;
     }
 
     .buttons {
-
         justify-content: center;
     }
 
     .cards {
-
         grid-template-columns: 1fr;
     }
 
-    .footer-inner {
+    .social-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
 
+    .footer-inner {
         flex-direction: column;
 
         text-align: center;
     }
+
 }
 
 
 @media (max-width: 500px) {
 
     section {
-
-        padding: 68px 0;
+        padding: 70px 0;
     }
 
     .hero h1 {
+        font-size: 47px;
 
-        font-size: 45px;
-
-        letter-spacing:
-            -2px;
+        letter-spacing: -2.5px;
     }
 
     .tagline {
+        font-size: 9px;
 
-        font-size: 10px;
-
-        letter-spacing:
-            1.3px;
+        letter-spacing: 1.2px;
     }
 
     .hero-description {
-
         font-size: 14px;
     }
 
-    .card {
+    .buttons {
+        display: grid;
 
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .button {
+        padding: 0 8px;
+
+        font-size: 9px;
+    }
+
+    .card {
         padding: 25px;
+    }
+
+    .social-grid {
+        grid-template-columns: 1fr;
     }
 
 }
@@ -760,7 +701,6 @@ footer {
 <header>
 
 <div class="container nav">
-
 
 <a href="#" class="brand">
 
@@ -795,14 +735,15 @@ Trading
 </a>
 
 <a
-    href="#"
+    href="https://youtube.com/@jayasuryatrades?si=IHOUWpghBU4-WwdR"
     class="nav-youtube"
+    target="_blank"
+    rel="noopener"
 >
 YouTube
 </a>
 
 </nav>
-
 
 </div>
 
@@ -815,7 +756,6 @@ YouTube
 ======================================================= -->
 
 <main>
-
 
 <section class="hero">
 
@@ -843,9 +783,7 @@ EXECUTE.
 
 
 <div class="tagline">
-
 LEARNING ENDS • EXECUTION BEGINS • RESULTS FOLLOW
-
 </div>
 
 
@@ -858,13 +796,31 @@ the market and executing with consistency.
 </p>
 
 
+<!-- FOUR NAVIGATION BUTTONS -->
+
 <div class="buttons">
 
 <a
     href="#market-analysis"
     class="button button-gold"
 >
-Explore Market Analysis
+MARKET ANALYSIS
+</a>
+
+
+<a
+    href="#education"
+    class="button button-outline"
+>
+EDUCATION
+</a>
+
+
+<a
+    href="#psychology"
+    class="button button-outline"
+>
+TRADING PSYCHOLOGY
 </a>
 
 
@@ -872,7 +828,7 @@ Explore Market Analysis
     href="#trading"
     class="button button-outline"
 >
-Explore Trading
+TRADING
 </a>
 
 </div>
@@ -902,7 +858,6 @@ Explore Trading
 ======================================================= -->
 
 <section id="market-analysis">
-
 
 <div class="container">
 
@@ -944,8 +899,9 @@ XAUUSD market analysis, key levels, market structure,
 possible scenarios and trade planning.
 </p>
 
+
 <a
-    href="#"
+    href="articles/gold-market-analysis-xauusd-august-29-2026.html"
     class="card-link"
 >
 View Gold Analysis →
@@ -970,7 +926,6 @@ View Gold Analysis →
     id="education"
     class="section-dark"
 >
-
 
 <div class="container">
 
@@ -1062,7 +1017,6 @@ Explore Chart Patterns →
 
 <section id="psychology">
 
-
 <div class="container">
 
 
@@ -1088,7 +1042,7 @@ Understanding yourself is another.
 <div class="cards">
 
 
-<article class="card psychology-box">
+<article class="card">
 
 <div class="icon">
 🧠
@@ -1127,9 +1081,8 @@ Explore Trading Mindset →
 
 <section
     id="trading"
-    class="trading-section section-dark"
+    class="section-dark"
 >
-
 
 <div class="container">
 
@@ -1221,7 +1174,6 @@ View Trade Results →
 
 <section class="profile-section">
 
-
 <div class="container">
 
 
@@ -1235,25 +1187,146 @@ View Trade Results →
 </div>
 
 
-<div class="eyebrow">
-Jayasurya Trades
-</div>
-
-
 <h2>
-Learning Ends.
-<span class="gold">
-Execution Begins.
-</span>
+Jayasurya
 </h2>
 
 
 <p>
 
-A trading platform focused on market analysis,
-education, trading psychology and disciplined execution.
+Jayasurya Trades is focused on market analysis,
+trading education, trading psychology and disciplined execution.
 
 </p>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     CONNECT
+======================================================= -->
+
+<section
+    id="connect"
+    class="connect-section"
+>
+
+<div class="container">
+
+
+<div class="section-heading"
+     style="margin-left:auto;margin-right:auto;">
+
+<div class="section-label">
+Connect
+</div>
+
+<h2>
+Follow Jayasurya Trades
+</h2>
+
+<p>
+Follow the latest market analysis, trading insights,
+videos and community updates.
+</p>
+
+</div>
+
+
+
+<div class="social-grid">
+
+
+<a
+    href="https://youtube.com/@jayasuryatrades?si=IHOUWpghBU4-WwdR"
+    class="social-link"
+    target="_blank"
+    rel="noopener"
+>
+<span class="social-icon">▶</span>
+YouTube
+</a>
+
+
+<a
+    href="https://www.instagram.com/jayasuryatrades"
+    class="social-link"
+    target="_blank"
+    rel="noopener"
+>
+<span class="social-icon">◎</span>
+Instagram
+</a>
+
+
+<a
+    href="https://discord.gg/dXNU9SJdt"
+    class="social-link"
+    target="_blank"
+    rel="noopener"
+>
+<span class="social-icon">◈</span>
+Discord
+</a>
+
+
+<a
+    href="https://x.com/JayasuryaTrades"
+    class="social-link"
+    target="_blank"
+    rel="noopener"
+>
+<span class="social-icon">𝕏</span>
+X
+</a>
+
+
+<a
+    href="https://www.threads.com/@jayasuryatrades"
+    class="social-link"
+    target="_blank"
+    rel="noopener"
+>
+<span class="social-icon">@</span>
+Threads
+</a>
+
+
+<a
+    href="https://t.me/jayasuryatrades"
+    class="social-link"
+    target="_blank"
+    rel="noopener"
+>
+<span class="social-icon">✈</span>
+Telegram
+</a>
+
+
+<a
+    href="https://www.facebook.com/Jayasuryatrades"
+    class="social-link"
+    target="_blank"
+    rel="noopener"
+>
+<span class="social-icon">f</span>
+Facebook
+</a>
+
+
+<a
+    href="#"
+    class="social-link"
+>
+<span class="social-icon">↗</span>
+Back to Top
+</a>
+
+
+</div>
 
 </div>
 
@@ -1271,7 +1344,6 @@ education, trading psychology and disciplined execution.
 
 <footer>
 
-
 <div class="container footer-inner">
 
 
@@ -1287,7 +1359,7 @@ TRADES
 
 <div class="footer-copy">
 
-© 2026 Jayasurya Trades. All rights reserved.
+© 2026 Jayasurya Trades
 
 </div>
 
@@ -1299,4 +1371,4 @@ TRADES
 
 </body>
 
-</html>
+      </html>
