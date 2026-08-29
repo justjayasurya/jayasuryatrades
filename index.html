@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Jayasurya Trades | Market Analysis & Trading Psychology</title>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Jayasurya Trades — Market Analysis, Trading Psychology, Trade Journal and Trading Education. Learning Ends • Execution Begins • Results Follow.">
+<title>Jayasurya Trades | Market Analysis, Education & Trading Psychology</title>
 
-<meta name="theme-color" content="#050505">
+<meta name="description"
+      content="Jayasurya Trades — Market Analysis, Price Action, Advanced Chart Patterns, Trading Psychology, Trade Journal and Trade Results.">
+
+<meta name="theme-color"
+      content="#050505">
 
 <style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +34,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #050505;
-    color: #f4f4f4;
+    color: #f5f5f5;
     line-height: 1.6;
 }
 
@@ -33,81 +43,1263 @@ a {
     color: inherit;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 .container {
     width: min(1120px, 92%);
     margin: auto;
 }
 
-/* ================= HEADER ================= */
+
+/* =========================================================
+   HEADER
+========================================================= */
 
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(5,5,5,0.94);
+
+    background: rgba(5, 5, 5, 0.95);
+
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(212,160,23,0.25);
+
+    border-bottom: 1px solid rgba(218, 169, 47, 0.25);
 }
 
 .nav {
     min-height: 76px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    gap: 20px;
 }
+
+
+/* Brand */
 
 .brand {
     display: flex;
     align-items: center;
+
     gap: 12px;
-    font-size: 16px;
+
+    font-size: 15px;
     font-weight: 800;
+
     letter-spacing: 1.5px;
 }
 
-.brand-mark {
-    width: 45px;
-    height: 45px;
+.brand img {
+    width: 48px;
+    height: 48px;
+
     object-fit: contain;
 }
+
+
+/* Navigation */
 
 nav {
     display: flex;
     align-items: center;
-    gap: 24px;
+
+    gap: 23px;
 }
 
 nav a {
     color: #bdbdbd;
-    font-size: 13px;
+
+    font-size: 12px;
+    font-weight: 600;
+
     transition: 0.25s;
 }
 
 nav a:hover {
-    color: #e5b536;
+    color: #e3ae35;
 }
 
 .nav-youtube {
-    border: 1px solid #b88a20;
-    padding: 8px 14px;
+    border: 1px solid #a97e20;
+
+    padding: 8px 13px;
+
     border-radius: 4px;
-    color: #e5b536;
+
+    color: #e3ae35 !important;
 }
 
-/* ================= HERO ================= */
+
+/* =========================================================
+   HERO
+========================================================= */
 
 .hero {
     min-height: 88vh;
+
     display: flex;
     align-items: center;
+
     position: relative;
+
     overflow: hidden;
 
     background:
         radial-gradient(
-            circle at 75% 40%,
-            rgba(211,163,42,0.13),
+            circle at 75% 35%,
+            rgba(218, 169, 47, 0.13),
+            transparent 34%
+        ),
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(218, 169, 47, 0.05),
             transparent 35%
+        ),
+        #050505;
+}
+
+
+/* subtle grid */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0.08;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.08) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.08) 1px,
+            transparent 1px
+        );
+
+    background-size: 70px 70px;
+
+    pointer-events: none;
+}
+
+
+.hero-grid {
+
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 55px;
+
+    align-items: center;
+
+    padding: 85px 0;
+}
+
+
+/* Hero text */
+
+.eyebrow {
+
+    color: #dfad35;
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(43px, 7vw, 78px);
+
+    line-height: 0.94;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+}
+
+
+.gold {
+    color: #dfad35;
+}
+
+
+.tagline {
+
+    color: #dfad35;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-description {
+
+    color: #a0a0a0;
+
+    max-width: 570px;
+
+    font-size: 16px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Hero buttons */
+
+.buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.button {
+
+    display: inline-block;
+
+    padding: 12px 19px;
+
+    border-radius: 4px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+}
+
+
+.button-gold {
+
+    background: #d6a32c;
+
+    color: #050505;
+}
+
+
+.button-gold:hover {
+
+    background: #e8b63b;
+
+    transform: translateY(-2px);
+}
+
+
+.button-outline {
+
+    border: 1px solid #414141;
+
+    color: #ddd;
+}
+
+
+.button-outline:hover {
+
+    border-color: #d6a32c;
+
+    color: #e2ae35;
+}
+
+
+/* Hero banner */
+
+.hero-banner {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero-banner img {
+
+    width: 100%;
+
+    max-width: 520px;
+
+    border-radius: 9px;
+
+    border:
+        1px solid
+        rgba(218, 169, 47, 0.35);
+
+    box-shadow:
+        0 25px 80px
+        rgba(0,0,0,0.65);
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+section {
+
+    padding: 85px 0;
+}
+
+
+.section-dark {
+
+    background: #090909;
+
+    border-top:
+        1px solid #181818;
+
+    border-bottom:
+        1px solid #181818;
+}
+
+
+.section-heading {
+
+    margin-bottom: 42px;
+}
+
+
+.section-label {
+
+    color: #dca72f;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    margin-bottom: 9px;
+}
+
+
+.section-heading h2 {
+
+    font-size:
+        clamp(31px, 5vw, 47px);
+
+    line-height: 1.1;
+
+    margin-bottom: 12px;
+}
+
+
+.section-heading p {
+
+    color: #909090;
+
+    max-width: 650px;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.card {
+
+    background:
+        linear-gradient(
+            145deg,
+            #111111,
+            #080808
+        );
+
+    border:
+        1px solid #252525;
+
+    border-radius: 8px;
+
+    padding: 29px;
+
+    transition: 0.25s;
+}
+
+
+.card:hover {
+
+    transform:
+        translateY(-5px);
+
+    border-color:
+        rgba(218,169,47,0.55);
+}
+
+
+.icon {
+
+    font-size: 26px;
+
+    margin-bottom: 17px;
+}
+
+
+.card h3 {
+
+    font-size: 19px;
+
+    margin-bottom: 9px;
+}
+
+
+.card p {
+
+    color: #919191;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+
+.card-link {
+
+    color: #dfad35;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   MARKET ANALYSIS
+========================================================= */
+
+.gold-market {
+
+    max-width: 500px;
+}
+
+
+/* =========================================================
+   TRADING PSYCHOLOGY
+========================================================= */
+
+.psychology-box {
+
+    max-width: 500px;
+}
+
+
+/* =========================================================
+   TRADING
+========================================================= */
+
+.trading-section {
+
+    background:
+        linear-gradient(
+            180deg,
+            #090909,
+            #050505
+        );
+}
+
+
+/* =========================================================
+   PROFILE
+========================================================= */
+
+.profile-section {
+
+    text-align: center;
+
+    background: #050505;
+}
+
+
+.profile-photo {
+
+    width: 155px;
+    height: 155px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border:
+        2px solid #bd8e27;
+
+    box-shadow:
+        0 15px 55px
+        rgba(0,0,0,0.6);
+}
+
+
+.profile-photo img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.profile-section h2 {
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+
+.profile-section p {
+
+    color: #909090;
+
+    max-width: 650px;
+
+    margin:
+        0 auto;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    background: #030303;
+
+    border-top:
+        1px solid #202020;
+
+    padding: 35px 0;
+}
+
+
+.footer-inner {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.footer-brand {
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    font-size: 14px;
+}
+
+
+.footer-brand span {
+
+    color: #dca72f;
+}
+
+
+.footer-copy {
+
+    color: #5f5f5f;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero-grid {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding:
+            65px 0;
+    }
+
+    .hero-banner {
+
+        order: -1;
+    }
+
+    .hero-banner img {
+
+        max-width: 430px;
+    }
+
+    .hero-description {
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttons {
+
+        justify-content: center;
+    }
+
+    .cards {
+
+        grid-template-columns: 1fr;
+    }
+
+    .footer-inner {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    section {
+
+        padding: 68px 0;
+    }
+
+    .hero h1 {
+
+        font-size: 45px;
+
+        letter-spacing:
+            -2px;
+    }
+
+    .tagline {
+
+        font-size: 10px;
+
+        letter-spacing:
+            1.3px;
+    }
+
+    .hero-description {
+
+        font-size: 14px;
+    }
+
+    .card {
+
+        padding: 25px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<header>
+
+<div class="container nav">
+
+
+<a href="#" class="brand">
+
+<img
+    src="brand-banner.png"
+    alt="Jayasurya Trades"
+>
+
+<span>
+JAYASURYA TRADES
+</span>
+
+</a>
+
+
+<nav>
+
+<a href="#market-analysis">
+Market Analysis
+</a>
+
+<a href="#education">
+Education
+</a>
+
+<a href="#psychology">
+Psychology
+</a>
+
+<a href="#trading">
+Trading
+</a>
+
+<a
+    href="#"
+    class="nav-youtube"
+>
+YouTube
+</a>
+
+</nav>
+
+
+</div>
+
+</header>
+
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<main>
+
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+
+<div>
+
+<div class="eyebrow">
+Jayasurya Trades
+</div>
+
+
+<h1>
+
+ANALYZE.<br>
+
+<span class="gold">
+ANTICIPATE.
+</span><br>
+
+EXECUTE.
+
+</h1>
+
+
+<div class="tagline">
+
+LEARNING ENDS • EXECUTION BEGINS • RESULTS FOLLOW
+
+</div>
+
+
+<p class="hero-description">
+
+Market analysis, trading education and trading psychology —
+focused on developing a disciplined process for understanding
+the market and executing with consistency.
+
+</p>
+
+
+<div class="buttons">
+
+<a
+    href="#market-analysis"
+    class="button button-gold"
+>
+Explore Market Analysis
+</a>
+
+
+<a
+    href="#trading"
+    class="button button-outline"
+>
+Explore Trading
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="hero-banner">
+
+<img
+    src="brand-banner.png"
+    alt="Jayasurya Trades Brand"
+>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     MARKET ANALYSIS
+======================================================= -->
+
+<section id="market-analysis">
+
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<div class="section-label">
+Market Analysis
+</div>
+
+<h2>
+Market Analysis
+</h2>
+
+<p>
+Market analysis focused on understanding price behaviour,
+important levels and possible market scenarios.
+</p>
+
+</div>
+
+
+
+<div class="cards">
+
+
+<article class="card gold-market">
+
+<div class="icon">
+📊
+</div>
+
+<h3>
+Gold Market
+</h3>
+
+<p>
+XAUUSD market analysis, key levels, market structure,
+possible scenarios and trade planning.
+</p>
+
+<a
+    href="#"
+    class="card-link"
+>
+View Gold Analysis →
+</a>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     EDUCATION
+======================================================= -->
+
+<section
+    id="education"
+    class="section-dark"
+>
+
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<div class="section-label">
+Education
+</div>
+
+<h2>
+Education
+</h2>
+
+<p>
+Build a stronger understanding of price movement,
+chart structures and market behaviour.
+</p>
+
+</div>
+
+
+
+<div class="cards">
+
+
+<article class="card">
+
+<div class="icon">
+📈
+</div>
+
+<h3>
+Price Action
+</h3>
+
+<p>
+Learn to understand price movement, market structure,
+levels and the behaviour of buyers and sellers.
+</p>
+
+<a
+    href="#"
+    class="card-link"
+>
+Explore Price Action →
+</a>
+
+</article>
+
+
+
+<article class="card">
+
+<div class="icon">
+📐
+</div>
+
+<h3>
+Advanced Chart Patterns
+</h3>
+
+<p>
+Study advanced chart patterns and understand how
+they can be interpreted within market structure.
+</p>
+
+<a
+    href="#"
+    class="card-link"
+>
+Explore Chart Patterns →
+</a>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     TRADING PSYCHOLOGY
+======================================================= -->
+
+<section id="psychology">
+
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<div class="section-label">
+Trading Psychology
+</div>
+
+<h2>
+Trading Psychology
+</h2>
+
+<p>
+The market is only one part of trading.
+Understanding yourself is another.
+</p>
+
+</div>
+
+
+
+<div class="cards">
+
+
+<article class="card psychology-box">
+
+<div class="icon">
+🧠
+</div>
+
+<h3>
+Trading Mindset
+</h3>
+
+<p>
+Discipline, patience, emotional control, decision-making,
+impulsive trading and the mindset required for consistent execution.
+</p>
+
+<a
+    href="#"
+    class="card-link"
+>
+Explore Trading Mindset →
+</a>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     TRADING
+======================================================= -->
+
+<section
+    id="trading"
+    class="trading-section section-dark"
+>
+
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<div class="section-label">
+Trading
+</div>
+
+<h2>
+Trading
+</h2>
+
+<p>
+Follow the trading process — from planned setups
+to outcomes and lessons.
+</p>
+
+</div>
+
+
+
+<div class="cards">
+
+
+<article class="card">
+
+<div class="icon">
+📝
+</div>
+
+<h3>
+Trade Journal
+</h3>
+
+<p>
+Documenting planned setups, market reasoning,
+entry, stop loss, take profit and execution.
+</p>
+
+<a
+    href="#"
+    class="card-link"
+>
+View Trade Journal →
+</a>
+
+</article>
+
+
+
+<article class="card">
+
+<div class="icon">
+🎯
+</div>
+
+<h3>
+Trade Result
+</h3>
+
+<p>
+Review trade outcomes, execution and the lessons
+learned from each completed trade.
+</p>
+
+<a
+    href="#"
+    class="card-link"
+>
+View Trade Results →
+</a>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     PROFILE
+======================================================= -->
+
+<section class="profile-section">
+
+
+<div class="container">
+
+
+<div class="profile-photo">
+
+<img
+    src="profile.png"
+    alt="Jayasurya"
+>
+
+</div>
+
+
+<div class="eyebrow">
+Jayasurya Trades
+</div>
+
+
+<h2>
+Learning Ends.
+<span class="gold">
+Execution Begins.
+</span>
+</h2>
+
+
+<p>
+
+A trading platform focused on market analysis,
+education, trading psychology and disciplined execution.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+</main>
+
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+
+<div class="container footer-inner">
+
+
+<div class="footer-brand">
+
+JAYASURYA
+<span>
+TRADES
+</span>
+
+</div>
+
+
+<div class="footer-copy">
+
+© 2026 Jayasurya Trades. All rights reserved.
+
+</div>
+
+
+</div>
+
+</footer>
+
+
+</body>
+
+</html>            transparent 35%
         ),
         #050505;
 }
