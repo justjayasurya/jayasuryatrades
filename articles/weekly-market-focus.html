@@ -10,7 +10,7 @@
 <title>Weekly Market Focus | Jayasurya Trades</title>
 
 <meta name="description"
-content="Jayasurya Trades Weekly Market Focus — structured market analysis across major global markets throughout the week.">
+content="Jayasurya Trades Weekly Market Focus — one week, seven markets, one disciplined approach. Structured analysis focused on levels, structure, scenarios and confirmation.">
 
 <style>
 
@@ -20,20 +20,29 @@ content="Jayasurya Trades Weekly Market Focus — structured market analysis acr
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+
     background: #050505;
-    color: #f4f4f4;
-    line-height: 1.7;
+
+    color: #f2f2f2;
+
+    line-height: 1.75;
 }
 
 a {
     text-decoration: none;
+
     color: inherit;
 }
 
 .container {
     width: min(900px, 92%);
+
     margin: auto;
 }
 
@@ -43,20 +52,30 @@ a {
 ========================================================= */
 
 header {
-    border-bottom:
-        1px solid rgba(218,169,47,0.25);
+    position: sticky;
 
-    background: #050505;
+    top: 0;
+
+    z-index: 1000;
+
+    background: rgba(5,5,5,.96);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom:
+        1px solid rgba(218,169,47,.25);
 }
 
 .nav {
-    min-height: 72px;
+    min-height: 70px;
 
     display: flex;
 
     align-items: center;
 
     justify-content: space-between;
+
+    gap: 15px;
 }
 
 .brand {
@@ -74,9 +93,9 @@ header {
 }
 
 .brand img {
-    width: 44px;
+    width: 43px;
 
-    height: 44px;
+    height: 43px;
 
     object-fit: contain;
 }
@@ -84,9 +103,9 @@ header {
 .back {
     color: #dca72f;
 
-    font-size: 11px;
+    font-size: 12px;
 
-    font-weight: 800;
+    font-weight: 700;
 }
 
 
@@ -95,33 +114,40 @@ header {
 ========================================================= */
 
 .hero {
-    padding: 80px 0 55px;
+    padding: 75px 0 55px;
 
     border-bottom:
         1px solid #202020;
 }
 
 .label {
+    display: inline-block;
+
     color: #dca72f;
+
+    border:
+        1px solid #765b1d;
+
+    padding: 6px 11px;
 
     font-size: 10px;
 
-    font-weight: 800;
-
-    letter-spacing: 2.5px;
-
     text-transform: uppercase;
 
-    margin-bottom: 12px;
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
 }
 
 h1 {
     font-size:
-        clamp(38px, 6vw, 60px);
+        clamp(34px, 6vw, 57px);
 
-    line-height: 1.05;
+    line-height: 1.08;
 
-    margin-bottom: 18px;
+    letter-spacing: -1.5px;
+
+    margin-bottom: 22px;
 }
 
 .gold {
@@ -129,11 +155,11 @@ h1 {
 }
 
 .intro {
-    color: #777;
-
-    font-size: 15px;
+    color: #999;
 
     max-width: 720px;
+
+    font-size: 16px;
 }
 
 
@@ -142,30 +168,30 @@ h1 {
 ========================================================= */
 
 .articles {
-    padding: 60px 0 100px;
+    padding: 60px 0 90px;
 }
 
 .article-card {
     display: block;
 
+    padding: 30px;
+
     background: #0d0d0d;
 
     border:
-        1px solid #292929;
+        1px solid #242424;
 
     border-radius: 8px;
 
-    padding: 30px;
+    margin-bottom: 20px;
 
-    margin-bottom: 18px;
-
-    transition: 0.25s;
+    transition: .25s;
 }
 
 .article-card:hover {
-    border-color: #765b1d;
+    transform: translateY(-4px);
 
-    transform: translateY(-3px);
+    border-color: #6b531e;
 }
 
 .date {
@@ -179,23 +205,23 @@ h1 {
 
     text-transform: uppercase;
 
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .article-card h2 {
     font-size: 24px;
 
-    line-height: 1.25;
+    line-height: 1.3;
 
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .article-card p {
-    color: #888;
+    color: #858585;
 
     font-size: 14px;
 
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
 .read {
@@ -230,6 +256,8 @@ footer {
     justify-content: space-between;
 
     align-items: center;
+
+    gap: 20px;
 }
 
 .footer-brand {
@@ -255,10 +283,11 @@ footer {
    MOBILE
 ========================================================= */
 
-@media (max-width: 600px) {
+@media(max-width:600px) {
 
     .hero {
-        padding: 60px 0 45px;
+        padding:
+            60px 0 45px;
     }
 
     .article-card {
@@ -295,7 +324,6 @@ footer {
 
 <div class="container nav">
 
-
 <a
     href="../index.html"
     class="brand"
@@ -320,7 +348,6 @@ JAYASURYA TRADES
 ← BACK TO HOME
 </a>
 
-
 </div>
 
 </header>
@@ -328,16 +355,15 @@ JAYASURYA TRADES
 
 
 <!-- =======================================================
-     HERO
+     WEEKLY MARKET FOCUS HEADER
 ======================================================= -->
 
 <section class="hero">
 
 <div class="container">
 
-
 <div class="label">
-Weekly Market Focus
+Weekly Market Focus • 7 Markets
 </div>
 
 
@@ -348,36 +374,16 @@ Weekly <span class="gold">Market Focus</span>
 
 <p class="intro">
 
-One week. Seven markets. One disciplined approach.
+One week. Seven markets. One disciplined approach.<br><br>
 
-<br><br>
+Structured analysis of key markets, focusing on
+<strong>levels, structure, scenarios, and confirmation.</strong><br><br>
 
-The Jayasurya Trades Weekly Market Focus provides
-structured market analysis across major global markets
-throughout the week.
+No hype. Just how the market behaves.<br><br>
 
-<br><br>
-
-Each day focuses on one key market, highlighting market
-structure, important levels, potential scenarios, and
-confirmation points—helping investors, swing traders,
-and intraday traders understand what the market is
-setting up for.
-
-<br><br>
-
-No hype. Just how the market behaves.
-
-<br><br>
-
-Levels. Structure. Scenarios. Disciplined execution.
-
-<br><br>
-
-Watch. Wait. Confirm.
+Watch. Wait. Confirm. 👀
 
 </p>
-
 
 </div>
 
@@ -386,7 +392,7 @@ Watch. Wait. Confirm.
 
 
 <!-- =======================================================
-     ARTICLE ARCHIVE
+     ARTICLES
 ======================================================= -->
 
 <main class="articles">
@@ -394,35 +400,28 @@ Watch. Wait. Confirm.
 <div class="container">
 
 
-
-<!-- =====================================================
+<!-- =======================================================
      SEPTEMBER 4
-===================================================== -->
+======================================================= -->
 
 <a
-href="gold-market-analysis-xauusd-september-4-2026.html"
-class="article-card"
+    href="gold-market-analysis-xauusd-september-4-2026.html"
+    class="article-card"
 >
 
 <div class="date">
 September 4, 2026 • Analysis For September 5
 </div>
 
-
 <h2>
-GOLD TOMORROW | Sep 5, 2026 | Trendline Breakout &amp; 4500–4300 Range
+GOLD TOMORROW | Sep 5, 2026 | XAUUSD Gold Analysis
 </h2>
 
-
 <p>
-
-Trendline pattern, the 4500–4300 rectangle zone,
-the next support at 4291.296, immediate resistance
-at 4592.556, and the bullish breakout scenario
-I am watching.
-
+Latest Gold analysis covering the active market structure,
+important levels, possible scenarios and the confirmation
+points being watched.
 </p>
-
 
 <div class="read">
 Read Analysis →
@@ -432,34 +431,28 @@ Read Analysis →
 
 
 
-<!-- =====================================================
+<!-- =======================================================
      SEPTEMBER 3
-===================================================== -->
+======================================================= -->
 
 <a
-href="gold-market-analysis-xauusd-september-3-2026.html"
-class="article-card"
+    href="gold-market-analysis-xauusd-september-3-2026.html"
+    class="article-card"
 >
 
 <div class="date">
 September 3, 2026 • Analysis For September 4
 </div>
 
-
 <h2>
 GOLD TOMORROW | Sep 4, 2026 | Bullish Confirmation Above 4450.100
 </h2>
 
-
 <p>
-
-Bullish confirmation above 4450.100, current
-buy-side market structure, resistance levels at
-4682.654, 4592.046 and 4845.252, and the bearish
-trend-change level I am watching.
-
+Bullish confirmation above 4450.100, current buy-side
+market structure, resistance levels at 4682.654, 4592.046
+and 4845.252, and the bearish trend-change level being watched.
 </p>
-
 
 <div class="read">
 Read Analysis →
@@ -469,34 +462,28 @@ Read Analysis →
 
 
 
-<!-- =====================================================
+<!-- =======================================================
      SEPTEMBER 2
-===================================================== -->
+======================================================= -->
 
 <a
-href="gold-market-analysis-xauusd-september-2-2026.html"
-class="article-card"
+    href="gold-market-analysis-xauusd-september-2-2026.html"
+    class="article-card"
 >
 
 <div class="date">
 September 2, 2026 • Analysis For September 3
 </div>
 
-
 <h2>
 GOLD TOMORROW | Sep 3, 2026 | Bearish Continuation
 </h2>
 
-
 <p>
-
-Head and Shoulders bearish continuation,
-the crucial 4375.178–4334.358 zone,
-support at 4204.205 and the bullish
-trend-change confirmation level I am watching.
-
+Head and Shoulders bearish continuation, the crucial
+4375.178–4334.358 zone, support at 4204.205 and the
+bullish trend-change confirmation level being watched.
 </p>
-
 
 <div class="read">
 Read Analysis →
@@ -506,34 +493,28 @@ Read Analysis →
 
 
 
-<!-- =====================================================
+<!-- =======================================================
      SEPTEMBER 1
-===================================================== -->
+======================================================= -->
 
 <a
-href="gold-market-analysis-xauusd-september-1-2026.html"
-class="article-card"
+    href="gold-market-analysis-xauusd-september-1-2026.html"
+    class="article-card"
 >
 
 <div class="date">
 September 1, 2026 • Analysis For September 2
 </div>
 
-
 <h2>
 GOLD TOMORROW | Sep 2, 2026 | Head &amp; Shoulders Breakout
 </h2>
 
-
 <p>
-
-4-hour Head and Shoulders breakout,
-key decision zone, bullish confirmation level,
-bearish scenario and the levels I am watching
-for Gold.
-
+4-hour Head and Shoulders breakout, key decision zone,
+bullish confirmation level, bearish scenario and the
+important levels being watched for Gold.
 </p>
-
 
 <div class="read">
 Read Analysis →
@@ -543,33 +524,27 @@ Read Analysis →
 
 
 
-<!-- =====================================================
+<!-- =======================================================
      AUGUST 31
-===================================================== -->
+======================================================= -->
 
 <a
-href="gold-market-analysis-xauusd-august-31-2026.html"
-class="article-card"
+    href="gold-market-analysis-xauusd-august-31-2026.html"
+    class="article-card"
 >
 
 <div class="date">
 August 31, 2026 • Analysis For September 1
 </div>
 
-
 <h2>
 GOLD TOMORROW | Sep 1, 2026 | Key Levels &amp; Plan
 </h2>
 
-
 <p>
-
-Key decision zone, current support,
-bullish and bearish scenarios and the
-levels I am watching for Gold.
-
+Key decision zone, current support, bullish and bearish
+scenarios and the levels being watched for Gold.
 </p>
-
 
 <div class="read">
 Read Analysis →
@@ -579,40 +554,34 @@ Read Analysis →
 
 
 
-<!-- =====================================================
+<!-- =======================================================
      AUGUST 29
-===================================================== -->
+======================================================= -->
 
 <a
-href="gold-market-analysis-xauusd-august-29-2026.html"
-class="article-card"
+    href="gold-market-analysis-xauusd-august-29-2026.html"
+    class="article-card"
 >
 
 <div class="date">
 August 29, 2026 • Gold Analysis
 </div>
 
-
 <h2>
 XAUUSD Gold Market Analysis
 </h2>
 
-
 <p>
-
-Previous Gold market analysis covering
-market structure, important levels
-and potential scenarios.
-
+Gold market analysis covering market structure,
+the Double Bottom, parallel channel breakdown,
+support levels and downtrend confirmation.
 </p>
-
 
 <div class="read">
 Read Analysis →
 </div>
 
 </a>
-
 
 
 </div>
@@ -629,7 +598,6 @@ Read Analysis →
 
 <div class="container footer">
 
-
 <div class="footer-brand">
 
 JAYASURYA
@@ -643,7 +611,6 @@ TRADES
 <div class="copy">
 © 2026 Jayasurya Trades
 </div>
-
 
 </div>
 
