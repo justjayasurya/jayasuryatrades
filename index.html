@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="icon" type="image/png" href="favicon.png">
-   
+
 <title>Jayasurya Trades | Analyze. Anticipate. Execute.</title>
 
 <meta name="description"
@@ -278,12 +278,28 @@ nav a:hover {
     justify-content: center;
 
     align-items: center;
+
+    width: 100%;
+
+    height: auto;
+
+    overflow: visible;
 }
 
 .hero-banner img {
-    width: 100%;
+    display: block;
+
+    width: min(100%, 500px);
 
     max-width: 500px;
+
+    height: auto !important;
+
+    max-height: none !important;
+
+    object-fit: contain;
+
+    object-position: center;
 
     filter:
         drop-shadow(
@@ -380,10 +396,14 @@ section {
 }
 
 /* Full card clickable area */
+
 .card-full-link {
     position: absolute;
+
     inset: 0;
+
     z-index: 2;
+
     border-radius: 8px;
 }
 
@@ -621,10 +641,24 @@ footer {
 
     .hero-banner {
         order: -1;
+
+        width: 100%;
+
+        height: auto;
+
+        overflow: visible;
     }
 
     .hero-banner img {
-        max-width: 430px;
+        width: min(100%, 500px);
+
+        max-width: 500px;
+
+        height: auto !important;
+
+        max-height: none !important;
+
+        object-fit: contain;
     }
 
     .hero-description {
@@ -674,6 +708,24 @@ footer {
 
     .hero-description {
         font-size: 14px;
+    }
+
+    .hero-banner {
+        width: 100%;
+
+        height: auto;
+
+        margin: 0;
+    }
+
+    .hero-banner img {
+        width: 100%;
+
+        max-width: 500px;
+
+        height: auto !important;
+
+        max-height: none !important;
     }
 
     .buttons {
@@ -919,7 +971,7 @@ Structured analysis of key markets, focusing on
 
 No hype. Just how the market behaves.<br><br>
 
-Watch. Wait. Confirm.
+Watch. Wait. Confirm. 👀
 </p>
 
 </article>
@@ -1115,7 +1167,9 @@ Compare the market setup before the move with what the market did after.
 
 </div>
 
+
 <div class="cards">
+
 
 <article class="card">
 
@@ -1138,6 +1192,7 @@ See the market setup before the move, then compare it with what price actually d
 </p>
 
 </article>
+
 
 </div>
 
