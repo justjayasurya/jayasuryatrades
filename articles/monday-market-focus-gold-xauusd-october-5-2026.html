@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Monday Market Focus | Gold / XAUUSD | October 5, 2026 | Jayasurya Trades</title>
+
+<meta name="description"
+content="Monday Market Focus — Gold / XAUUSD analysis for October 5, 2026, covering the daily Head & Shoulders downside breakout, the $4,000–$4,100 support zone and the descending trendline breakout being watched for bullish confirmation.">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050505;
+    color: #f2f2f2;
+    line-height: 1.75;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: auto;
+}
+
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(5,5,5,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(218,169,47,0.25);
+}
+
+.nav {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.brand img {
+    width: 43px;
+    height: 43px;
+    object-fit: contain;
+}
+
+.back {
+    color: #dca72f;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* ARTICLE HEADER */
+
+.article-header {
+    padding: 75px 0 50px;
+    border-bottom: 1px solid #202020;
+}
+
+.category {
+    display: inline-block;
+    color: #dca72f;
+    border: 1px solid #765b1d;
+    padding: 6px 11px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.article-header h1 {
+    font-size: clamp(34px, 6vw, 57px);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+    margin-bottom: 25px;
+}
+
+.gold {
+    color: #dca72f;
+}
+
+
+/* META */
+
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.meta-box {
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 11px;
+    color: #999;
+}
+
+.meta-box strong {
+    color: #dca72f;
+    margin-left: 4px;
+}
+
+
+/* ARTICLE */
+
+.article {
+    padding: 60px 0 90px;
+}
+
+.article p {
+    color: #b0b0b0;
+    font-size: 16px;
+    margin-bottom: 23px;
+}
+
+.article h2 {
+    font-size: 29px;
+    line-height: 1.2;
+    margin: 55px 0 17px;
+}
+
+.article h3 {
+    font-size: 20px;
+    color: #e0ae36;
+    margin: 35px 0 10px;
+}
+
+.article strong {
+    color: #dddddd;
+}
+
+
+/* HIGHLIGHT */
+
+.highlight {
+    border-left: 3px solid #dca72f;
+    background: #0c0c0c;
+    padding: 23px 25px;
+    margin: 35px 0;
+    color: #c8c8c8;
+    font-size: 16px;
+}
+
+
+/* CHART */
+
+.chart {
+    margin: 38px 0 45px;
+    background: #090909;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chart img {
+    width: 100%;
+    height: auto;
+}
+
+.chart-caption {
+    padding: 13px 17px;
+    color: #777;
+    font-size: 11px;
+    border-top: 1px solid #202020;
+}
+
+
+/* LEVELS */
+
+.level-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 30px 0 40px;
+}
+
+.level {
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    border-radius: 7px;
+    padding: 23px;
+}
+
+.level-label {
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 9px;
+    margin-bottom: 7px;
+}
+
+.level-price {
+    color: #dfad35;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+/* TAKEAWAYS */
+
+.takeaways {
+    background: #0c0c0c;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 45px;
+}
+
+.takeaways h2 {
+    margin-top: 0;
+}
+
+.takeaways ul {
+    padding-left: 20px;
+    color: #aaa;
+}
+
+.takeaways li {
+    margin-bottom: 10px;
+}
+
+
+/* PRINCIPLE */
+
+.principle {
+    text-align: center;
+    padding: 45px 25px;
+    margin: 50px 0;
+    background: radial-gradient(
+        circle at center,
+        rgba(218,169,47,0.09),
+        transparent 65%
+    );
+    border-top: 1px solid #252525;
+    border-bottom: 1px solid #252525;
+}
+
+.principle p {
+    color: #dfad35;
+    font-size: 21px;
+    font-weight: 700;
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* SOCIAL */
+
+.social-section {
+    margin-top: 65px;
+    padding: 35px 0 10px;
+    border-top: 1px solid #222;
+    text-align: center;
+}
+
+.social-section h2 {
+    margin: 0 0 8px;
+    font-size: 25px;
+}
+
+.social-section > p {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 10px;
+    background: #0d0d0d;
+    border: 1px solid #272727;
+    border-radius: 5px;
+    color: #999;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+
+/* DISCLAIMER */
+
+.disclaimer {
+    margin-top: 60px;
+    padding: 23px;
+    border: 1px solid #252525;
+    border-radius: 6px;
+    background: #080808;
+}
+
+.disclaimer h3 {
+    margin: 0 0 8px;
+    color: #dca72f;
+    font-size: 14px;
+}
+
+.disclaimer p {
+    margin: 0;
+    color: #666;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #202020;
+    background: #030303;
+    padding: 35px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-brand {
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    font-size: 12px;
+}
+
+.footer-brand span {
+    color: #dca72f;
+}
+
+.footer-copy {
+    color: #555;
+    font-size: 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .article-header {
+        padding: 55px 0 40px;
+    }
+
+    .article {
+        padding: 45px 0 70px;
+    }
+
+    .article p {
+        font-size: 15px;
+    }
+
+    .level-box {
+        grid-template-columns: 1fr;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<header>
+
+<div class="container nav">
+
+<a href="../index.html" class="brand">
+
+<img
+src="../jayasurya-logo.png"
+alt="Jayasurya Trades"
+>
+
+<span>JAYASURYA TRADES</span>
+
+</a>
+
+<a href="../index.html" class="back">
+← Back to Home
+</a>
+
+</div>
+
+</header>
+
+
+
+<!-- =======================================================
+     ARTICLE HEADER
+======================================================= -->
+
+<section class="article-header">
+
+<div class="container">
+
+<div class="category">
+Weekly Market Focus • Monday • Gold
+</div>
+
+<h1>
+
+Monday Market Focus
+
+<br>
+
+<span class="gold">
+Gold / XAUUSD — Head &amp; Shoulders Breakdown
+</span>
+
+</h1>
+
+<div class="article-meta">
+
+<div class="meta-box">
+Market:
+<strong>Gold / XAUUSD</strong>
+</div>
+
+<div class="meta-box">
+Date:
+<strong>October 5, 2026</strong>
+</div>
+
+<div class="meta-box">
+Focus:
+<strong>Monday Market Focus</strong>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     ARTICLE
+======================================================= -->
+
+<main class="article">
+
+<div class="container">
+
+
+<p>
+For this Monday Market Focus, I am looking at <strong>Gold / XAUUSD</strong> and the current market structure.
+</p>
+
+<p>
+The market is forming a <strong>Head &amp; Shoulders pattern</strong> and has already broken out of that pattern on the <strong>daily timeframe to the downside</strong>.
+</p>
+
+<p>
+From the current market structure, there is a high possibility that Gold could move lower toward the <strong>$4,000–$4,100</strong> price zone.
+</p>
+
+
+<div class="highlight">
+
+<strong>
+The $4,000–$4,100 zone is a huge support area I am watching.
+<br><br>
+Because of the Head &amp; Shoulders downside breakout, the market could potentially move toward this support zone.
+</strong>
+
+</div>
+
+
+
+<!-- =======================================================
+     CHART 1
+======================================================= -->
+
+<div class="chart">
+
+<img
+src="../Oct5-2026-1.jpg"
+alt="Gold XAUUSD Monday Market Focus October 5 2026 Head and Shoulders Breakdown"
+>
+
+<div class="chart-caption">
+Chart 1 — Daily Head &amp; Shoulders downside breakout and the $4,000–$4,100 support zone.
+</div>
+
+</div>
+
+
+
+<h2>
+Head &amp; Shoulders Breakdown
+</h2>
+
+<p>
+The important development I am watching is the <strong>Head &amp; Shoulders pattern breakdown on the daily timeframe</strong>.
+</p>
+
+<p>
+The breakout has occurred toward the downside. Because of this structure, I am not looking to force buying trades from the current market area.
+</p>
+
+<p>
+The potential downside area I am watching is the major <strong>$4,000–$4,100 support zone</strong>.
+</p>
+
+
+
+<div class="level-box">
+
+<div class="level">
+
+<div class="level-label">
+Major Support Zone
+</div>
+
+<div class="level-price">
+$4,000–$4,100
+</div>
+
+</div>
+
+</div>
+
+
+
+<p>
+This is a major area of interest because the market could potentially move toward this support after the Head &amp; Shoulders breakdown.
+</p>
+
+
+
+<h2>
+Why I Am Not Looking for Buy Trades Now
+</h2>
+
+<p>
+At the current stage, I do not consider it the right time to look for buying trades.
+</p>
+
+<p>
+The Head &amp; Shoulders pattern has already broken downward on the daily timeframe, while the major support zone is still below the current market area.
+</p>
+
+<p>
+Instead of trying to anticipate a reversal, I would rather wait for the market structure to provide confirmation.
+</p>
+
+
+
+<div class="highlight">
+
+<strong>
+No forced buying.
+<br><br>
+The downside structure needs to be respected while the market remains below the confirmation I am waiting for.
+</strong>
+
+</div>
+
+
+
+<!-- =======================================================
+     CHART 2
+======================================================= -->
+
+<div class="chart">
+
+<img
+src="../Oct5-2026-2.jpg"
+alt="Gold XAUUSD Monday Market Focus October 5 2026 Descending Trendline"
+>
+
+<div class="chart-caption">
+Chart 2 — Descending trendline structure and the upside breakout confirmation being watched.
+</div>
+
+</div>
+
+
+
+<h2>
+The Descending Trendline
+</h2>
+
+<p>
+The market is also forming a <strong>descending trendline pattern</strong>.
+</p>
+
+<p>
+Previously, the market formed a descending trendline and, after breaking that trendline upward, produced a <strong>huge rally and strong upward movement</strong>.
+</p>
+
+<p>
+A similar descending trendline is forming again, and this is the key confirmation I am watching for a possible bullish move.
+</p>
+
+
+
+<h2>
+What Happens If the Trendline Breaks Up?
+</h2>
+
+<p>
+If the current descending trendline breaks upward, there could be a strong upward move. That would be the point where I would start looking for <strong>buy setups and buy entries</strong>.
+</p>
+
+<p>
+The important point is that the trendline breakout needs to happen first. Until that confirmation appears, I do not want to anticipate the bullish move.
+</p>
+
+
+
+<div class="highlight">
+
+<strong>
+Descending trendline breaks upward
+<br><br>
+→ Bullish momentum could develop
+<br><br>
+→ That is the area where I would start looking for buy setups and entries.
+</strong>
+
+</div>
+
+
+
+<h2>
+The Two Scenarios I Am Watching
+</h2>
+
+<h3>
+Bearish Scenario
+</h3>
+
+<p>
+The current Head &amp; Shoulders structure has already broken downward on the daily timeframe. If the downside structure continues, Gold could potentially move toward the major <strong>$4,000–$4,100 support zone</strong>.
+</p>
+
+<h3>
+Bullish Scenario
+</h3>
+
+<p>
+If the descending trendline breaks upward, I would then start watching for bullish setups and possible buy entries. The previous trendline breakout produced a strong upward move, which is why this trendline is important to monitor.
+</p>
+
+
+
+<h2>
+Why Patience Matters Here
+</h2>
+
+<p>
+At the moment, I do not see it as the right time to buy while the Head &amp; Shoulders structure remains unresolved and the descending trendline has not broken upward.
+</p>
+
+<p>
+At the same time, I also do not consider it the right time to sell aggressively because the major <strong>$4,000–$4,100 support zone</strong> is immediately below the current market area.
+</p>
+
+<p>
+This creates a situation where confirmation is more important than prediction.
+</p>
+
+
+
+<div class="takeaways">
+
+<h2>
+Key Takeaways
+</h2>
+
+<ul>
+
+<li>The market is forming a <strong>Head &amp; Shoulders pattern</strong>.</li>
+
+<li>The Head &amp; Shoulders pattern has broken downward on the <strong>daily timeframe</strong>.</li>
+
+<li>The major support zone I am watching is <strong>$4,000–$4,100</strong>.</li>
+
+<li>Because of the current downside structure, I am not looking for buying trades at this stage.</li>
+
+<li>The market is also forming a <strong>descending trendline</strong>.</li>
+
+<li>A previous descending trendline breakout to the upside produced a huge rally.</li>
+
+<li>A similar trendline is forming again.</li>
+
+<li>An upside break of the current descending trendline would be the confirmation I am watching for possible buy setups.</li>
+
+<li>Until that upside trendline breakout happens, I prefer patience rather than forcing a buy.</li>
+
+<li>I also do not want to sell aggressively while the major <strong>$4,000–$4,100 support</strong> is immediately below.</li>
+
+</ul>
+
+</div>
+
+
+
+<p>
+The objective is not to predict every movement. It is to wait for the market to show the direction, confirm the structure, and then act according to the setup.
+</p>
+
+<p>
+<strong>
+Watch the structure.
+<br><br>
+Wait for confirmation.
+<br><br>
+Let the market prove the move.
+</strong>
+</p>
+
+
+
+<!-- =======================================================
+     PRINCIPLE
+======================================================= -->
+
+<div class="principle">
+
+<p>
+
+One day. One market. One focused analysis.
+
+<br><br>
+
+Levels. Structure. Scenarios. Confirmation. 👀
+
+<br><br>
+
+No hype. Just how the market behaves.
+
+<br><br>
+
+Watch. Wait. Confirm.
+
+</p>
+
+</div>
+
+
+
+<!-- =======================================================
+     SOCIAL
+======================================================= -->
+
+<section class="social-section">
+
+<h2>
+Follow Jayasurya Trades
+</h2>
+
+<p>
+For more market analysis, trading education,
+psychology and trading updates.
+</p>
+
+<div class="social-grid">
+
+<a
+href="https://youtube.com/@jayasuryatrades?si=IHOUWpghBU4-WwdR"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+YouTube
+</a>
+
+<a
+href="https://www.instagram.com/jayasuryatrades"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+Instagram
+</a>
+
+<a
+href="https://discord.gg/dXNU9SJdt"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+Discord
+</a>
+
+<a
+href="https://x.com/JayasuryaTrades"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+X
+</a>
+
+<a
+href="https://www.threads.com/@jayasuryatrades"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+Threads
+</a>
+
+<a
+href="https://t.me/jayasuryatrades"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+Telegram
+</a>
+
+<a
+href="https://www.facebook.com/Jayasuryatrades"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+Facebook
+</a>
+
+<a
+href="../index.html"
+class="social-link"
+>
+Jayasurya Trades
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     DISCLAIMER
+======================================================= -->
+
+<div class="disclaimer">
+
+<h3>
+Risk Disclaimer
+</h3>
+
+<p>
+This analysis is provided for educational and informational purposes only and should not be considered financial advice or a recommendation to buy or sell any financial instrument.
+
+Trading involves substantial risk. Always conduct your own research and follow your own trading plan and risk-management rules.
+</p>
+
+</div>
+
+
+</div>
+
+</main>
+
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+<div class="container footer">
+
+<div class="footer-brand">
+
+JAYASURYA
+<span>TRADES</span>
+
+</div>
+
+<div class="footer-copy">
+
+© 2026 Jayasurya Trades
+
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+
+  </html>
