@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tuesday Market Focus | NIFTY 50 | October 6, 2026 | Jayasurya Trades</title>
+
+<meta name="description"
+content="Tuesday Market Focus — NIFTY 50 analysis for October 6, 2026, focusing on 22,200 key support, rejection near support, a possible sideways range, and upside levels at 24,500 and 26,200.">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050505;
+    color: #f2f2f2;
+    line-height: 1.75;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: auto;
+}
+
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(5,5,5,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(218,169,47,0.25);
+}
+
+.nav {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.brand img {
+    width: 43px;
+    height: 43px;
+    object-fit: contain;
+}
+
+.back {
+    color: #dca72f;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* ARTICLE HEADER */
+
+.article-header {
+    padding: 75px 0 50px;
+    border-bottom: 1px solid #202020;
+}
+
+.category {
+    display: inline-block;
+    color: #dca72f;
+    border: 1px solid #765b1d;
+    padding: 6px 11px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.article-header h1 {
+    font-size: clamp(34px, 6vw, 57px);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+    margin-bottom: 25px;
+}
+
+.gold {
+    color: #dca72f;
+}
+
+
+/* META */
+
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.meta-box {
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 11px;
+    color: #999;
+}
+
+.meta-box strong {
+    color: #dca72f;
+    margin-left: 4px;
+}
+
+
+/* ARTICLE */
+
+.article {
+    padding: 60px 0 90px;
+}
+
+.article p {
+    color: #b0b0b0;
+    font-size: 16px;
+    margin-bottom: 23px;
+}
+
+.article h2 {
+    font-size: 29px;
+    line-height: 1.2;
+    margin: 55px 0 17px;
+}
+
+.article h3 {
+    font-size: 20px;
+    color: #e0ae36;
+    margin: 35px 0 10px;
+}
+
+.article strong {
+    color: #dddddd;
+}
+
+
+/* HIGHLIGHT */
+
+.highlight {
+    border-left: 3px solid #dca72f;
+    background: #0c0c0c;
+    padding: 23px 25px;
+    margin: 35px 0;
+    color: #c8c8c8;
+    font-size: 16px;
+}
+
+
+/* CHART */
+
+.chart {
+    margin: 38px 0 45px;
+    background: #090909;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chart img {
+    width: 100%;
+    height: auto;
+}
+
+.chart-caption {
+    padding: 13px 17px;
+    color: #777;
+    font-size: 11px;
+    border-top: 1px solid #202020;
+}
+
+
+/* LEVELS */
+
+.level-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 30px 0 40px;
+}
+
+.level {
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    border-radius: 7px;
+    padding: 23px;
+}
+
+.level-label {
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 9px;
+    margin-bottom: 7px;
+}
+
+.level-price {
+    color: #dfad35;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+/* TAKEAWAYS */
+
+.takeaways {
+    background: #0c0c0c;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 45px;
+}
+
+.takeaways h2 {
+    margin-top: 0;
+}
+
+.takeaways ul {
+    padding-left: 20px;
+    color: #aaa;
+}
+
+.takeaways li {
+    margin-bottom: 10px;
+}
+
+
+/* PRINCIPLE */
+
+.principle {
+    text-align: center;
+    padding: 45px 25px;
+    margin: 50px 0;
+    background: radial-gradient(
+        circle at center,
+        rgba(218,169,47,0.09),
+        transparent 65%
+    );
+    border-top: 1px solid #252525;
+    border-bottom: 1px solid #252525;
+}
+
+.principle p {
+    color: #dfad35;
+    font-size: 21px;
+    font-weight: 700;
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* SOCIAL */
+
+.social-section {
+    margin-top: 65px;
+    padding: 35px 0 10px;
+    border-top: 1px solid #222;
+    text-align: center;
+}
+
+.social-section h2 {
+    margin: 0 0 8px;
+    font-size: 25px;
+}
+
+.social-section > p {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 10px;
+    background: #0d0d0d;
+    border: 1px solid #272727;
+    border-radius: 5px;
+    color: #999;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+
+/* DISCLAIMER */
+
+.disclaimer {
+    margin-top: 60px;
+    padding: 23px;
+    border: 1px solid #252525;
+    border-radius: 6px;
+    background: #080808;
+}
+
+.disclaimer h3 {
+    margin: 0 0 8px;
+    color: #dca72f;
+    font-size: 14px;
+}
+
+.disclaimer p {
+    margin: 0;
+    color: #666;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #202020;
+    background: #030303;
+    padding: 35px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-brand {
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    font-size: 12px;
+}
+
+.footer-brand span {
+    color: #dca72f;
+}
+
+.footer-copy {
+    color: #555;
+    font-size: 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .article-header {
+        padding: 55px 0 40px;
+    }
+
+    .article {
+        padding: 45px 0 70px;
+    }
+
+    .article p {
+        font-size: 15px;
+    }
+
+    .level-box {
+        grid-template-columns: 1fr;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+</style>
+<body>
+<header>
+
+<div class="container nav">
+
+<a href="../index.html" class="brand">
+
+<img
+src="../jayasurya-logo.png"
+alt="Jayasurya Trades"
+>
+
+<span>JAYASURYA TRADES</span>
+
+</a>
+
+<a href="../index.html" class="back">
+← Back to Home
+</a>
+
+</div>
+
+</header>
+
+
+
+<!-- =======================================================
+     ARTICLE HEADER
+======================================================= -->
+
+
+<section class="article-header">
+<div class="container">
+<div class="category">
+Weekly Market Focus • Tuesday • NIFTY 50
+</div>
+
+<h1>
+Tuesday Market Focus
+<br>
+<span class="gold">
+NIFTY 50 — 22,200 Key Support
+</span>
+</h1>
+
+<div class="article-meta">
+<div class="meta-box">
+Market:
+<strong>NIFTY 50</strong>
+</div>
+
+<div class="meta-box">
+Date:
+<strong>October 6, 2026</strong>
+</div>
+
+<div class="meta-box">
+Focus:
+<strong>Tuesday Market Focus</strong>
+</div>
+</div>
+</div>
+</section>
+
+<main class="article">
+<div class="container">
+
+<p>
+For this Tuesday Market Focus, I am looking at <strong>NIFTY 50</strong> and the current market structure around the <strong>22,200</strong> support zone.
+</p>
+
+<p>
+The market has reached an area that I consider a <strong>key opportunity zone around 22,200</strong>. A rejection candle has also appeared very close to this support, keeping the possibility of a shift toward an upside move in focus.
+</p>
+
+<div class="highlight">
+<strong>
+22,200 is the key level I am watching.
+<br><br>
+If this support holds, the focus remains on bullish structures and upside confirmation.
+</strong>
+</div>
+
+<div class="chart">
+<img
+src="../Oct6-2026-1.jpg"
+alt="NIFTY 50 Tuesday Market Focus October 6 2026 22000 key support"
+>
+<div class="chart-caption">
+Chart 1 — NIFTY 50 structure around the 22,200 support zone and the bullish scenario being watched.
+</div>
+</div>
+
+<h2>
+22,200 — The Key Support Zone
+</h2>
+
+<p>
+The most important level in this analysis is <strong>22,200</strong>. The market has produced a rejection candle very near this support, which is an important reaction to watch.
+</p>
+
+<p>
+From my market-structure perspective, if 22,200 continues to hold, there is potential for the market to move upward. The broader trend is still being viewed as upward, although the current market also has fundamental weakness associated with the absence of strong FII participation.
+</p>
+
+<div class="level-box">
+<div class="level">
+<div class="level-label">
+Key Support
+</div>
+<div class="level-price">
+22,200
+</div>
+</div>
+
+<div class="level">
+<div class="level-label">
+Resistance 1
+</div>
+<div class="level-price">
+24,500
+</div>
+</div>
+
+<div class="level">
+<div class="level-label">
+Resistance 2
+</div>
+<div class="level-price">
+26,200
+</div>
+</div>
+</div>
+
+<h2>
+Upside Levels
+</h2>
+
+<p>
+If the market moves upward from the 22,200 zone, the next immediate resistance I am watching is <strong>24,500</strong>.
+</p>
+
+<p>
+If the market breaks above 24,500 with confirmation, the next major level I am watching is <strong>26,200</strong>.
+</p>
+
+<div class="highlight">
+<strong>
+22,200 → Key Support
+<br><br>
+24,500 → Resistance 1
+<br><br>
+26,200 → Resistance 2
+</strong>
+</div>
+
+<h2>
+Sideways Range Is Also Possible
+</h2>
+
+<p>
+The market may not immediately move upward. A <strong>sideways range</strong> could form around the current area.
+</p>
+
+<p>
+If a range develops, I would rather wait for the market to show an <strong>upside breakout structure</strong> instead of forcing a trade inside the range.
+</p>
+
+<h2>
+FII &amp; DII Participation
+</h2>
+
+<p>
+One of the current weaknesses I am watching is the absence of strong FII participation. At the same time, DII participation is supporting the market from the downside area in my view.
+</p>
+
+<p>
+If the fundamental condition changes and FII participation returns, the bullish move could potentially develop with stronger momentum. The timing and strength of that move would still require confirmation from price structure.
+</p>
+
+<h2>
+What I Am Watching Now
+</h2>
+
+<h3>
+For Traders
+</h3>
+
+<p>
+For lower-timeframe traders, the focus is on <strong>buy setups</strong>. If the market forms a sideways range, I would wait for an upside breakout structure before considering the bullish move.
+</p>
+
+<h3>
+For Investors
+</h3>
+
+<p>
+From a technical perspective, the 22,200 area is an important zone to watch for investors because of the support reaction and the broader upward structure. The bullish scenario remains conditional on support holding and the market confirming the move.
+</p>
+
+<h2>
+The Two Scenarios I Am Watching
+</h2>
+
+<h3>
+Bullish Scenario
+</h3>
+
+<p>
+If 22,200 holds and the market confirms an upside structure, the first major resistance is <strong>24,500</strong>. A confirmed break above 24,500 could open the path toward <strong>26,200</strong>.
+</p>
+
+<h3>
+Sideways Scenario
+</h3>
+
+<p>
+If the market remains range-bound around the current area, I would wait for the range to develop and then look for an <strong>upside breakout</strong> rather than taking trades in the middle of the range.
+</p>
+
+<div class="takeaways">
+<h2>
+Key Takeaways
+</h2>
+
+<ul>
+<li><strong>22,200</strong> is the key support zone I am watching.</li>
+<li>A rejection candle has appeared very close to this support.</li>
+<li>The broader structure is being viewed with a bullish possibility while 22,200 holds.</li>
+<li>A sideways range is also possible before the next directional move.</li>
+<li>If the market moves upward, <strong>24,500</strong> is Resistance 1.</li>
+<li>A confirmed break above 24,500 could bring <strong>26,200</strong> into focus as Resistance 2.</li>
+<li>FII participation is an important fundamental factor I am watching.</li>
+<li>For lower-timeframe traders, the focus remains on buy setups and upside breakout structures.</li>
+<li>Confirmation remains more important than prediction.</li>
+</ul>
+</div>
+
+<p>
+The objective is not to predict every movement. It is to watch the key level, understand the structure, and wait for confirmation before acting.
+</p>
+
+<p>
+<strong>
+Watch the 22,200 zone.
+<br><br>
+Wait for the structure.
+<br><br>
+Let the market confirm the move.
+</strong>
+</p>
+
+<div class="principle">
+<p>
+One day. One market. One focused analysis.
+<br><br>
+Levels. Structure. Scenarios. Confirmation.
+<br><br>
+No hype. Just how the market behaves.
+<br><br>
+Watch. Wait. Confirm.
+</p>
+</div>
+
+<section class="social-section">
+<h2>
+Follow Jayasurya Trades
+</h2>
+
+<p>
+For more market analysis, trading education,
+psychology and trading updates.
+</p>
+
+<div class="social-grid">
+
+<a href="https://youtube.com/@jayasuryatrades?si=IHOUWpghBU4-WwdR" class="social-link" target="_blank" rel="noopener">
+YouTube
+</a>
+
+<a href="https://www.instagram.com/jayasuryatrades" class="social-link" target="_blank" rel="noopener">
+Instagram
+</a>
+
+<a href="https://discord.gg/dXNU9SJdt" class="social-link" target="_blank" rel="noopener">
+Discord
+</a>
+
+<a href="https://x.com/JayasuryaTrades" class="social-link" target="_blank" rel="noopener">
+X
+</a>
+
+<a href="https://www.threads.com/@jayasuryatrades" class="social-link" target="_blank" rel="noopener">
+Threads
+</a>
+
+<a href="https://t.me/jayasuryatrades" class="social-link" target="_blank" rel="noopener">
+Telegram
+</a>
+
+<a href="https://www.facebook.com/Jayasuryatrades" class="social-link" target="_blank" rel="noopener">
+Facebook
+</a>
+
+<a href="../index.html" class="social-link">
+Jayasurya Trades
+</a>
+
+</div>
+</section>
+
+<div class="disclaimer">
+<h3>
+Risk Disclaimer
+</h3>
+<p>
+This analysis is provided for educational and informational purposes only and should not be considered financial advice or a recommendation to buy or sell any financial instrument.
+<br><br>
+Trading involves substantial risk. Always conduct your own research and follow your own trading plan and risk-management rules.
+</p>
+</div>
+
+</div>
+</main>
+
+<footer>
+
+<div class="container footer">
+
+<div class="footer-brand">
+
+JAYASURYA
+<span>TRADES</span>
+
+</div>
+
+<div class="footer-copy">
+
+© 2026 Jayasurya Trades
+
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+
+  </html>
+
+</html>
