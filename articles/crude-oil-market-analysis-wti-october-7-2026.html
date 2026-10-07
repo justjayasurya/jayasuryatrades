@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wednesday Market Focus | Crude Oil - USOIL | 99 Gap-Fill Scenario | October 7, 2026</title>
+<meta content="Wednesday Market Focus — Crude Oil / USOIL analysis for October 7, 2026, focusing on the 90–85 support zone, the potential move toward 99 to fill the previous gap, and trendline confirmation for a larger downside move." name="description"/>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050505;
+    color: #f2f2f2;
+    line-height: 1.75;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: auto;
+}
+
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(5,5,5,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(218,169,47,0.25);
+}
+
+.nav {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.brand img {
+    width: 43px;
+    height: 43px;
+    object-fit: contain;
+}
+
+.back {
+    color: #dca72f;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* ARTICLE HEADER */
+
+.article-header {
+    padding: 75px 0 50px;
+    border-bottom: 1px solid #202020;
+}
+
+.category {
+    display: inline-block;
+    color: #dca72f;
+    border: 1px solid #765b1d;
+    padding: 6px 11px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.article-header h1 {
+    font-size: clamp(34px, 6vw, 57px);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+    margin-bottom: 25px;
+}
+
+.gold {
+    color: #dca72f;
+}
+
+
+/* META */
+
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.meta-box {
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 11px;
+    color: #999;
+}
+
+.meta-box strong {
+    color: #dca72f;
+    margin-left: 4px;
+}
+
+
+/* ARTICLE */
+
+.article {
+    padding: 60px 0 90px;
+}
+
+.article p {
+    color: #b0b0b0;
+    font-size: 16px;
+    margin-bottom: 23px;
+}
+
+.article h2 {
+    font-size: 29px;
+    line-height: 1.2;
+    margin: 55px 0 17px;
+}
+
+.article h3 {
+    font-size: 20px;
+    color: #e0ae36;
+    margin: 35px 0 10px;
+}
+
+.article strong {
+    color: #dddddd;
+}
+
+
+/* HIGHLIGHT */
+
+.highlight {
+    border-left: 3px solid #dca72f;
+    background: #0c0c0c;
+    padding: 23px 25px;
+    margin: 35px 0;
+    color: #c8c8c8;
+    font-size: 16px;
+}
+
+
+/* CHART */
+
+.chart {
+    margin: 38px 0 45px;
+    background: #090909;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chart img {
+    width: 100%;
+    height: auto;
+}
+
+.chart-caption {
+    padding: 13px 17px;
+    color: #777;
+    font-size: 11px;
+    border-top: 1px solid #202020;
+}
+
+
+/* LEVELS */
+
+.level-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 30px 0 40px;
+}
+
+.level {
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    border-radius: 7px;
+    padding: 23px;
+}
+
+.level-label {
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 9px;
+    margin-bottom: 7px;
+}
+
+.level-price {
+    color: #dfad35;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+/* TAKEAWAYS */
+
+.takeaways {
+    background: #0c0c0c;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 45px;
+}
+
+.takeaways h2 {
+    margin-top: 0;
+}
+
+.takeaways ul {
+    padding-left: 20px;
+    color: #aaa;
+}
+
+.takeaways li {
+    margin-bottom: 10px;
+}
+
+
+/* PRINCIPLE */
+
+.principle {
+    text-align: center;
+    padding: 45px 25px;
+    margin: 50px 0;
+    background: radial-gradient(
+        circle at center,
+        rgba(218,169,47,0.09),
+        transparent 65%
+    );
+    border-top: 1px solid #252525;
+    border-bottom: 1px solid #252525;
+}
+
+.principle p {
+    color: #dfad35;
+    font-size: 21px;
+    font-weight: 700;
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* SOCIAL */
+
+.social-section {
+    margin-top: 65px;
+    padding: 35px 0 10px;
+    border-top: 1px solid #222;
+    text-align: center;
+}
+
+.social-section h2 {
+    margin: 0 0 8px;
+    font-size: 25px;
+}
+
+.social-section > p {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 10px;
+    background: #0d0d0d;
+    border: 1px solid #272727;
+    border-radius: 5px;
+    color: #999;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+
+/* DISCLAIMER */
+
+.disclaimer {
+    margin-top: 60px;
+    padding: 23px;
+    border: 1px solid #252525;
+    border-radius: 6px;
+    background: #080808;
+}
+
+.disclaimer h3 {
+    margin: 0 0 8px;
+    color: #dca72f;
+    font-size: 14px;
+}
+
+.disclaimer p {
+    margin: 0;
+    color: #666;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #202020;
+    background: #030303;
+    padding: 35px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-brand {
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    font-size: 12px;
+}
+
+.footer-brand span {
+    color: #dca72f;
+}
+
+.footer-copy {
+    color: #555;
+    font-size: 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .article-header {
+        padding: 55px 0 40px;
+    }
+
+    .article {
+        padding: 45px 0 70px;
+    }
+
+    .article p {
+        font-size: 15px;
+    }
+
+    .level-box {
+        grid-template-columns: 1fr;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+</style>
+<body>
+
+<header>
+<div class="container nav">
+
+<a class="brand" href="../index.html">
+<img alt="Jayasurya Trades" src="../jayasurya-logo.png"/>
+<span>JAYASURYA TRADES</span>
+</a>
+
+<a class="back" href="../index.html">
+← Back to Home
+</a>
+
+</div>
+</header>
+
+
+<section class="article-header">
+<div class="container">
+
+<div class="category">
+Weekly Market Focus • Wednesday • Crude Oil
+</div>
+
+<h1>
+Wednesday Market Focus
+<br>
+<span class="gold">
+Crude Oil — 99 Gap-Fill Scenario
+</span>
+</h1>
+
+<div class="article-meta">
+
+<div class="meta-box">
+Market:
+<strong>CRUDE OIL / USOIL</strong>
+</div>
+
+<div class="meta-box">
+Date:
+<strong>October 7, 2026</strong>
+</div>
+
+<div class="meta-box">
+Focus:
+<strong>Wednesday Market Focus</strong>
+</div>
+
+<div class="meta-box">
+Current Price:
+<strong>90.28</strong>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<main class="article">
+<div class="container">
+
+<p>
+For this Wednesday Market Focus, I am looking at
+<strong>Crude Oil / USOIL</strong> and the current market structure around the
+<strong>90.28</strong> price area.
+</p>
+
+<p>
+The market has been forming a clear upward trendline pattern, while the
+<strong>90–85</strong> area remains an important support zone. There was previously
+a gap down from around the 90 area to lower prices, and the immediate scenario
+I am watching is a potential upward move that could fill that gap and reach
+<strong>99</strong>.
+</p>
+
+<div class="highlight">
+<strong>
+90.28 → Current price area
+<br><br>
+90–85 → Strong support zone
+<br><br>
+99 → Immediate upside / potential gap-fill area
+</strong>
+</div>
+
+
+<div class="chart">
+
+<img
+src="../Oct7-2026-1.jpg"
+alt="Crude Oil USOIL Wednesday Market Focus October 7 2026"
+>
+
+<div class="chart-caption">
+Chart 1 — Crude Oil / USOIL structure, upward trendline, support zone and the potential move toward 99.
+</div>
+
+</div>
+
+
+<h2>
+Current Market Structure
+</h2>
+
+<p>
+From the current market structure, Crude Oil is not being viewed as being in an
+overall <strong>buy trend</strong>. The upward move I am watching is a short-span
+opportunity within the broader view, rather than a signal to treat the market
+as a confirmed bullish trend.
+</p>
+
+<p>
+The key structure on the chart is the <strong>upward trendline</strong>. As long
+as price remains above that trendline, the market could potentially continue
+upward for a short span. The immediate objective I am watching is the
+<strong>99</strong> area, where the previous gap could potentially be filled.
+</p>
+
+
+<h2>
+90–85 — The Key Support Zone
+</h2>
+
+<p>
+The <strong>90–85</strong> range is the important support area in this analysis.
+Price is currently around 90.28, so this zone remains directly relevant to the
+immediate structure.
+</p>
+
+<p>
+A break below the upward trendline would change the setup I am watching.
+I would want confirmation rather than reacting to an intraday move alone.
+</p>
+
+
+<div class="level-box">
+
+<div class="level">
+<div class="level-label">Current Price</div>
+<div class="level-price">90.28</div>
+</div>
+
+<div class="level">
+<div class="level-label">Support Zone</div>
+<div class="level-price">90–85</div>
+</div>
+
+<div class="level">
+<div class="level-label">Potential Upside</div>
+<div class="level-price">99</div>
+</div>
+
+<div class="level">
+<div class="level-label">Later Downside</div>
+<div class="level-price">71</div>
+</div>
+
+</div>
+
+
+<h2>
+Potential Move Toward 99
+</h2>
+
+<p>
+The clean scenario for the next few days or next few weeks is that Crude Oil
+could potentially move upward and fill the previously formed gap down. If that
+move develops, <strong>99</strong> is the immediate level I am watching.
+</p>
+
+<p>
+This does not mean the market has entered a confirmed buy trend. The move
+toward 99 would be treated as a short-span opportunity within the current
+structure. After the gap is filled, I would wait rather than continue looking
+for buy entries.
+</p>
+
+
+<div class="highlight">
+<strong>
+Immediate scenario: potential upward move
+<br><br>
+Area being watched: 99
+<br><br>
+Reason: potential filling of the previous gap down
+<br><br>
+After the gap is filled: wait for trendline confirmation
+</strong>
+</div>
+
+
+<h2>
+Trendline Break — The Confirmation I Am Waiting For
+</h2>
+
+<p>
+If the market breaks below the <strong>upward trendline</strong> I have drawn,
+the focus can shift toward sell setups. I would look for stronger confirmation
+if the trendline is broken with a <strong>daily close or 4-hour close</strong>.
+</p>
+
+<p>
+If that downside break is confirmed, the market could enter a downtrend and we
+can start looking for good sell setups. Until that confirmation appears, the
+immediate upward move toward 99 remains the scenario I am watching.
+</p>
+
+
+<h3>
+For Short-Span Traders
+</h3>
+
+<p>
+Until the market reaches the 99 area, the focus can remain on short-span setups
+that align with the upward structure. The broader view should not be treated as
+a confirmed buy trend.
+</p>
+
+
+<h3>
+After 99
+</h3>
+
+<p>
+Once the potential gap-fill area around 99 is reached, I would wait for the
+market to show what it wants to do next. I would not continue forcing buy
+entries after the gap is filled. The next important confirmation would be a
+downside break of the upward trendline.
+</p>
+
+
+<h2>
+The Larger Downside Scenario
+</h2>
+
+<p>
+If the market reaches the 99 area and then turns lower, the larger downside
+scenario I am watching is a move toward <strong>71</strong>. In this scenario,
+the <strong>90–85 support range</strong> would need to be broken as the market
+develops the broader decline.
+</p>
+
+<p>
+This is a conditional scenario, not a prediction that the market must fall.
+The important point is to wait for the structure and confirmation before
+looking for the larger sell move.
+</p>
+
+
+<h2>
+Ignore the Noise — Follow the Chart
+</h2>
+
+<p>
+There is a lot of information spreading across social media about crude oil,
+including claims that oil prices must rise because of war, attacks or pressure
+involving Russia. I would not make a trading decision based on those kinds of
+social-media narratives.
+</p>
+
+<p>
+Do not buy into unverified information simply because it is widely being
+repeated. The focus here is the <strong>price structure and the facts visible
+on the chart</strong>. The market can react differently from what social media
+expects, and such narratives can create emotional decisions and trap retail
+traders.
+</p>
+
+
+<div class="highlight">
+<strong>
+Do not trade based on social-media hype.
+<br><br>
+Do not assume crude oil must rise because of headlines.
+<br><br>
+Follow the chart structure, levels and confirmation.
+</strong>
+</div>
+
+
+<h2>
+What I Am Watching Now
+</h2>
+
+
+<h3>
+Short-Span Upside Scenario
+</h3>
+
+<p>
+The immediate scenario is a potential move upward toward <strong>99</strong>,
+possibly as the market fills the previous gap down. Until that area is reached,
+short-span setups can be considered only when they align with the current
+structure.
+</p>
+
+
+<h3>
+Bearish Confirmation
+</h3>
+
+<p>
+If the upward trendline breaks and the break is confirmed with a
+<strong>4-hour or daily close</strong>, the focus can shift toward sell setups.
+This is the confirmation I am waiting for before treating the downside move as
+a stronger trend scenario.
+</p>
+
+
+<h3>
+Larger Downside
+</h3>
+
+<p>
+Following a confirmed bearish structure, the market could potentially move
+lower, with <strong>71</strong> being the larger downside level in the scenario
+I am watching. The 90–85 support range is important in this path because a
+break of that zone would support the broader bearish scenario.
+</p>
+
+
+<h2>
+The Two Scenarios I Am Watching
+</h2>
+
+
+<h3>
+Short-Span Upside Scenario
+</h3>
+
+<p>
+If the current upward trendline continues to hold, Crude Oil could potentially
+move toward <strong>99</strong> and fill the previous gap down. This is the
+immediate scenario I am watching, not a confirmation of a broader buy trend.
+</p>
+
+
+<h3>
+Bearish Trend Scenario
+</h3>
+
+<p>
+If price breaks below the upward trendline and confirms the break with a
+<strong>4-hour or daily close</strong>, I can start looking for sell setups.
+If the 90–85 support zone is subsequently broken, the larger downside scenario
+toward <strong>71</strong> comes into focus.
+</p>
+
+
+<div class="takeaways">
+
+<h2>
+Key Takeaways
+</h2>
+
+<ul>
+
+<li>
+<strong>90.28</strong> is the current price area being watched.
+</li>
+
+<li>
+<strong>90–85</strong> is the key support zone.
+</li>
+
+<li>
+The market is not being viewed as being in an overall buy trend.
+</li>
+
+<li>
+A short-span upward move toward <strong>99</strong> could potentially occur as
+the previous gap down is filled.
+</li>
+
+<li>
+Do not continue looking for buy entries simply because price reaches the
+gap-fill area.
+</li>
+
+<li>
+The upward trendline is the key confirmation structure for the immediate setup.
+</li>
+
+<li>
+A break below the trendline with a <strong>4-hour or daily close</strong> can
+shift the focus toward sell setups.
+</li>
+
+<li>
+If the 90–85 support range breaks in the bearish scenario,
+<strong>71</strong> is the larger downside level being watched.
+</li>
+
+<li>
+Do not base trading decisions on social-media narratives or claims about
+geopolitical events.
+</li>
+
+<li>
+Follow the chart: levels, structure and confirmation.
+</li>
+
+</ul>
+
+</div>
+
+
+<p>
+The objective is not to predict every movement. It is to watch the 90–85
+support zone, monitor the upward trendline, and wait for confirmation before
+acting.
+</p>
+
+
+<p>
+<strong>
+Watch the 99 gap-fill scenario.
+</strong>
+<br><br>
+<strong>
+Wait for the trendline confirmation.
+</strong>
+<br><br>
+<strong>
+Let the market confirm the move.
+</strong>
+</p>
+
+
+<div class="principle">
+
+<p>
+One day. One market. One focused analysis.
+<br><br>
+Levels. Structure. Scenarios. Confirmation.
+<br><br>
+No hype. Just how the market behaves.
+<br><br>
+Watch. Wait. Confirm.
+</p>
+
+</div>
+
+
+<section class="social-section">
+
+<h2>
+Follow Jayasurya Trades
+</h2>
+
+<p>
+For more market analysis, trading education,
+psychology and trading updates.
+</p>
+
+<div class="social-grid">
+
+<a
+href="https://youtube.com/@jayasuryatrades?si=IHOUWpghBU4-WwdR"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+YouTube
+</a>
+
+<a
+href="https://www.instagram.com/jayasuryatrades"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+Instagram
+</a>
+
+<a
+href="https://discord.gg/dXNU9SJdt"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+Discord
+</a>
+
+<a
+href="https://x.com/JayasuryaTrades"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+X
+</a>
+
+<a
+href="https://www.threads.com/@jayasuryatrades"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+Threads
+</a>
+
+<a
+href="https://t.me/jayasuryatrades"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+Telegram
+</a>
+
+<a
+href="https://www.facebook.com/Jayasuryatrades"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+Facebook
+</a>
+
+<a
+href="../index.html"
+class="social-link"
+>
+Jayasurya Trades
+</a>
+
+</div>
+</section>
+
+
+<div class="disclaimer">
+
+<h3>
+Risk Disclaimer
+</h3>
+
+<p>
+This analysis is provided for educational and informational purposes only and
+should not be considered financial advice or a recommendation to buy or sell
+any financial instrument.
+<br><br>
+Trading involves substantial risk. Always conduct your own research and follow
+your own trading plan and risk-management rules.
+</p>
+
+</div>
+
+</div>
+</main>
+
+
+<footer>
+
+<div class="container footer">
+
+<div class="footer-brand">
+
+JAYASURYA
+<span>TRADES</span>
+
+</div>
+
+<div class="footer-copy">
+
+© 2026 Jayasurya Trades
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
