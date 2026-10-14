@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wednesday Market Focus | Crude Oil - WTI / USOIL | 91 Gap Boundary &amp; Trendline Confirmation | October 14, 2026</title>
+<meta content="Wednesday Market Focus — Crude Oil / WTI (USOIL) analysis for October 14, 2026, focusing on ascending trendline rejection, the gap boundary at 91, potential continuation toward 113, and a confirmed trendline break scenario toward 71." name="description"/>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050505;
+    color: #f2f2f2;
+    line-height: 1.75;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: auto;
+}
+
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(5,5,5,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(218,169,47,0.25);
+}
+
+.nav {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.brand img {
+    width: 43px;
+    height: 43px;
+    object-fit: contain;
+}
+
+.back {
+    color: #dca72f;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* ARTICLE HEADER */
+
+.article-header {
+    padding: 75px 0 50px;
+    border-bottom: 1px solid #202020;
+}
+
+.category {
+    display: inline-block;
+    color: #dca72f;
+    border: 1px solid #765b1d;
+    padding: 6px 11px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.article-header h1 {
+    font-size: clamp(34px, 6vw, 57px);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+    margin-bottom: 25px;
+}
+
+.gold {
+    color: #dca72f;
+}
+
+
+/* META */
+
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.meta-box {
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 11px;
+    color: #999;
+}
+
+.meta-box strong {
+    color: #dca72f;
+    margin-left: 4px;
+}
+
+
+/* ARTICLE */
+
+.article {
+    padding: 60px 0 90px;
+}
+
+.article p {
+    color: #b0b0b0;
+    font-size: 16px;
+    margin-bottom: 23px;
+}
+
+.article h2 {
+    font-size: 29px;
+    line-height: 1.2;
+    margin: 55px 0 17px;
+}
+
+.article h3 {
+    font-size: 20px;
+    color: #e0ae36;
+    margin: 35px 0 10px;
+}
+
+.article strong {
+    color: #dddddd;
+}
+
+
+/* HIGHLIGHT */
+
+.highlight {
+    border-left: 3px solid #dca72f;
+    background: #0c0c0c;
+    padding: 23px 25px;
+    margin: 35px 0;
+    color: #c8c8c8;
+    font-size: 16px;
+}
+
+
+/* CHART */
+
+.chart {
+    margin: 38px 0 45px;
+    background: #090909;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chart img {
+    width: 100%;
+    height: auto;
+}
+
+.chart-caption {
+    padding: 13px 17px;
+    color: #777;
+    font-size: 11px;
+    border-top: 1px solid #202020;
+}
+
+
+/* LEVELS */
+
+.level-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 30px 0 40px;
+}
+
+.level {
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    border-radius: 7px;
+    padding: 23px;
+}
+
+.level-label {
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 9px;
+    margin-bottom: 7px;
+}
+
+.level-price {
+    color: #dfad35;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+/* TAKEAWAYS */
+
+.takeaways {
+    background: #0c0c0c;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 45px;
+}
+
+.takeaways h2 {
+    margin-top: 0;
+}
+
+.takeaways ul {
+    padding-left: 20px;
+    color: #aaa;
+}
+
+.takeaways li {
+    margin-bottom: 10px;
+}
+
+
+/* PRINCIPLE */
+
+.principle {
+    text-align: center;
+    padding: 45px 25px;
+    margin: 50px 0;
+    background: radial-gradient(
+        circle at center,
+        rgba(218,169,47,0.09),
+        transparent 65%
+    );
+    border-top: 1px solid #252525;
+    border-bottom: 1px solid #252525;
+}
+
+.principle p {
+    color: #dfad35;
+    font-size: 21px;
+    font-weight: 700;
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* SOCIAL */
+
+.social-section {
+    margin-top: 65px;
+    padding: 35px 0 10px;
+    border-top: 1px solid #222;
+    text-align: center;
+}
+
+.social-section h2 {
+    margin: 0 0 8px;
+    font-size: 25px;
+}
+
+.social-section > p {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 10px;
+    background: #0d0d0d;
+    border: 1px solid #272727;
+    border-radius: 5px;
+    color: #999;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+
+/* DISCLAIMER */
+
+.disclaimer {
+    margin-top: 60px;
+    padding: 23px;
+    border: 1px solid #252525;
+    border-radius: 6px;
+    background: #080808;
+}
+
+.disclaimer h3 {
+    margin: 0 0 8px;
+    color: #dca72f;
+    font-size: 14px;
+}
+
+.disclaimer p {
+    margin: 0;
+    color: #666;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #202020;
+    background: #030303;
+    padding: 35px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-brand {
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    font-size: 12px;
+}
+
+.footer-brand span {
+    color: #dca72f;
+}
+
+.footer-copy {
+    color: #555;
+    font-size: 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .article-header {
+        padding: 55px 0 40px;
+    }
+
+    .article {
+        padding: 45px 0 70px;
+    }
+
+    .article p {
+        font-size: 15px;
+    }
+
+    .level-box {
+        grid-template-columns: 1fr;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+</style>
+<body>
+
+<header>
+<div class="container nav">
+
+<a class="brand" href="../index.html">
+<img alt="Jayasurya Trades" src="../jayasurya-logo.png"/>
+<span>JAYASURYA TRADES</span>
+</a>
+
+<a class="back" href="../index.html">
+← Back to Home
+</a>
+
+</div>
+</header>
+
+
+<section class="article-header">
+<div class="container">
+
+<div class="category">
+Weekly Market Focus • Wednesday • Crude Oil
+</div>
+
+<h1>
+Wednesday Market Focus
+<br>
+<span class="gold">
+Crude Oil — 91 Gap Boundary &amp; Trendline Confirmation
+</span>
+</h1>
+
+<div class="article-meta">
+
+<div class="meta-box">
+Market:
+<strong>CRUDE OIL / WTI / USOIL</strong>
+</div>
+
+<div class="meta-box">
+Date:
+<strong>October 14, 2026</strong>
+</div>
+
+<div class="meta-box">
+Focus:
+<strong>Wednesday Market Focus</strong>
+</div>
+
+<div class="meta-box">
+Key Level:
+<strong>91 — Upper Gap Boundary</strong>
+</div>
+
+</div>
+</div>
+</section>
+
+<main class="article">
+<div class="container">
+
+<p>
+For this Wednesday Market Focus, I am looking at <strong>Crude Oil / WTI (USOIL)</strong>. In last week's analysis, I highlighted the possibility that price could take rejection from the ascending trendline and then move upward to fill the gap above. The market subsequently followed that scenario, moving upward toward the gap area.
+</p>
+
+<p>
+The upward move also took place around the time of reports about a ceasefire involving Russia and Ukraine announced by Donald Trump. In last week's analysis, the potential upward move had been identified before that announcement. This is a comparison between the earlier chart scenario and the subsequent market movement; it does not mean that news or price movement can be predicted with certainty.
+</p>
+
+<div class="chart">
+
+<img
+src="../Oct14-2026-1.jpg"
+alt="Crude Oil WTI USOIL Wednesday Market Focus October 14 2026 chart showing ascending trendline rejection and the gap area"
+>
+
+<div class="chart-caption">
+Chart 1 — Crude Oil / WTI (USOIL), ascending trendline rejection, the gap area around 91, and the conditional upside and downside scenarios.
+</div>
+
+</div>
+
+<h2>
+Current Market Structure
+</h2>
+
+<p>
+Price has taken rejection from the <strong>ascending trendline</strong>, as considered in the previous analysis. The market remains in an upward move toward the gap above. The immediate scenario I am watching is whether price continues upward until the gap is filled, with <strong>91</strong> marking the upper boundary of the gap.
+</p>
+
+<p>
+The next decision depends on how price behaves around and above that gap. Rather than assuming that the upward move must continue, I will wait for the daily candle close and the market's reaction around the level to provide confirmation.
+</p>
+
+<div class="highlight">
+<strong>
+91 → Upper boundary of the gap<br><br>
+113 → Potential upside scenario if price breaks and sustains above the gap<br><br>
+71 → Potential larger downside scenario if the ascending trendline breaks with confirmation
+</strong>
+</div>
+
+<h2>
+91 — The Upper Boundary of the Gap
+</h2>
+
+<p>
+The <strong>91</strong> price level is the upper boundary of the gap I am watching. If price continues upward and fills the gap, I will then observe whether the market breaks above this area or rejects it. Reaching the gap alone is not confirmation that the broader upward move will continue.
+</p>
+
+<p>
+A <strong>daily candle close above the gap</strong>, followed by a retest or rejection around or above the gap, could support the continuation scenario. I will wait for that price behaviour to develop instead of assuming the breakout in advance.
+</p>
+
+<div class="level-box">
+
+<div class="level">
+<div class="level-label">Gap Upper Boundary</div>
+<div class="level-price">91</div>
+</div>
+
+<div class="level">
+<div class="level-label">Potential Upside</div>
+<div class="level-price">113</div>
+</div>
+
+<div class="level">
+<div class="level-label">Key Structure</div>
+<div class="level-price">Ascending Trendline</div>
+</div>
+
+<div class="level">
+<div class="level-label">Potential Downside</div>
+<div class="level-price">71</div>
+</div>
+
+</div>
+
+<h2>
+Bullish Continuation Scenario — Potentially Toward 113
+</h2>
+
+<p>
+If Crude Oil continues to break above <strong>91</strong> and the breakout is supported by a candle close, the market could potentially move toward <strong>113</strong>. A daily close above the gap followed by a retest or rejection around or above the gap would provide additional confirmation for the continuation scenario.
+</p>
+
+<p>
+The market may also continue above the gap without a clear retracement. In either case, I will watch how price closes and behaves around the level. This remains a potential scenario, not a guaranteed target or a certainty that price will reach 113.
+</p>
+
+<div class="highlight">
+<strong>
+Immediate focus: potential gap fill up to the 91 boundary<br><br>
+Bullish confirmation: daily candle close above the gap<br><br>
+Additional confirmation: a retest or rejection around/above the gap<br><br>
+Potential continuation level: 113
+</strong>
+</div>
+
+<h2>
+Alternative Scenario — Ascending Trendline Breakdown
+</h2>
+
+<p>
+There is also a possibility that the market could break below the ascending trendline after filling the gap. This is an alternative scenario to monitor, not an outcome to assume in advance. I will wait for confirmation from price rather than anticipate a breakdown simply because the gap has been filled.
+</p>
+
+<p>
+A <strong>candle close below the ascending trendline</strong> would be the confirmation I am watching for this bearish scenario. If that occurs, Crude Oil could potentially move lower, with <strong>71</strong> as the larger downside level in this analysis.
+</p>
+
+<h3>
+For Short-Span Traders
+</h3>
+
+<p>
+If a confirmed trendline breakdown develops, traders may monitor intermediate price levels for possible profit-taking or consider trailing a stop-loss according to their own trading plan and risk management. The move toward 71 remains conditional on the bearish structure developing; it is not a certainty.
+</p>
+
+<h2>
+What I Am Watching Now
+</h2>
+
+<h3>
+Scenario 1 — Gap Fill and Bullish Continuation
+</h3>
+
+<p>
+If the ascending trendline continues to hold, price could continue upward to fill the gap, whose upper boundary is <strong>91</strong>. A daily candle close above the gap, followed by a retest or rejection around or above it, could support the continuation scenario toward <strong>113</strong>.
+</p>
+
+<h3>
+Scenario 2 — Trendline Breakdown
+</h3>
+
+<p>
+If price closes below the ascending trendline, the bearish scenario comes into focus. Following confirmation, the market could potentially move lower toward <strong>71</strong>. Until a confirmed candle close below the trendline appears, this remains only an alternative possibility.
+</p>
+
+<h2>
+The Two Scenarios I Am Watching
+</h2>
+
+<h3>
+Bullish Continuation
+</h3>
+
+<p>
+A continued upward move could fill the gap up to its upper boundary at <strong>91</strong>. A daily close above the gap, followed by a retest or rejection around or above it, could support further upside toward <strong>113</strong>.
+</p>
+
+<h3>
+Bearish Breakdown
+</h3>
+
+<p>
+If price confirms a break below the ascending trendline with a candle close, the market could potentially move toward <strong>71</strong>. I will wait for that confirmation rather than assume the trendline will break after the gap is filled.
+</p>
+
+<div class="takeaways">
+
+<h2>
+Key Takeaways
+</h2>
+
+<ul>
+<li>The previous analysis highlighted a possible rejection from the ascending trendline followed by an upward move toward the gap.</li>
+<li>Price subsequently moved upward toward the gap area, around the time of reports about a Russia–Ukraine ceasefire announcement.</li>
+<li><strong>91</strong> is the upper boundary of the gap being watched.</li>
+<li>A daily candle close above the gap, followed by a retest or rejection around/above it, could support bullish continuation.</li>
+<li>If price breaks above the gap with a candle close, with or without a retracement, <strong>113</strong> is the potential upside level being watched.</li>
+<li>An alternative scenario is a break below the ascending trendline after the gap is filled.</li>
+<li>A candle close below the ascending trendline is the confirmation being watched for the bearish scenario.</li>
+<li>If the bearish scenario develops, <strong>71</strong> is the potential larger downside level.</li>
+<li>Intermediate levels may be considered for profit-taking or trailing a stop-loss according to an individual trading plan.</li>
+<li>Neither scenario should be assumed before the market provides confirmation.</li>
+</ul>
+
+</div>
+
+<p>
+The objective is not to assume what the market must do next. I am watching the gap boundary at <strong>91</strong>, the possible continuation toward <strong>113</strong>, and the ascending trendline as the key structure for the alternative downside scenario toward <strong>71</strong>.
+</p>
+
+<p>
+<strong>Watch the 91 gap boundary.</strong>
+<br><br>
+<strong>Wait for the candle-close confirmation.</strong>
+<br><br>
+<strong>Let the market confirm the next move.</strong>
+</p>
+
+<div class="principle">
+
+<p>
+One day. One market. One focused analysis.
+<br><br>
+Levels. Structure. Scenarios. Confirmation.
+<br><br>
+No hype. Just how the market behaves.
+<br><br>
+Watch. Wait. Confirm.
+</p>
+
+</div>
+
+<section class="social-section">
+
+<h2>
+Follow Jayasurya Trades
+</h2>
+
+<p>
+For more market analysis, trading education,
+psychology and trading updates.
+</p>
+
+<div class="social-grid">
+
+<a
+href="https://youtube.com/@jayasuryatrades?si=IHOUWpghBU4-WwdR"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+YouTube
+</a>
+
+<a
+href="https://www.instagram.com/jayasuryatrades"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+Instagram
+</a>
+
+<a
+href="https://discord.gg/dXNU9SJdt"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+Discord
+</a>
+
+<a
+href="https://x.com/JayasuryaTrades"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+X
+</a>
+
+<a
+href="https://www.threads.com/@jayasuryatrades"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+Threads
+</a>
+
+<a
+href="https://t.me/jayasuryatrades"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+Telegram
+</a>
+
+<a
+href="https://www.facebook.com/Jayasuryatrades"
+class="social-link"
+target="_blank"
+rel="noopener"
+>
+Facebook
+</a>
+
+<a
+href="../index.html"
+class="social-link"
+>
+Jayasurya Trades
+</a>
+
+</div>
+</section>
+
+
+<div class="disclaimer">
+
+<h3>
+Risk Disclaimer
+</h3>
+
+<p>
+This analysis is provided for educational and informational purposes only and
+should not be considered financial advice or a recommendation to buy or sell
+any financial instrument.
+<br><br>
+Trading involves substantial risk. Always conduct your own research and follow
+your own trading plan and risk-management rules.
+</p>
+
+</div>
+
+</div>
+</main>
+
+
+<footer>
+
+<div class="container footer">
+
+<div class="footer-brand">
+
+JAYASURYA
+<span>TRADES</span>
+
+</div>
+
+<div class="footer-copy">
+
+© 2026 Jayasurya Trades
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
